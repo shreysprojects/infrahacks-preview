@@ -1,0 +1,445 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480">
+<!-- InfraHacks HQ · Ground floor · lobby help desk · Sun 04:00 -->
+<style>
+.l-led{animation:l-led 3s ease-in-out infinite}
+@keyframes l-led{0%,100%{opacity:1}50%{opacity:.45}}
+.l-mic{animation:l-mic 2.6s ease-in-out infinite}
+@keyframes l-mic{0%,60%,100%{opacity:1}80%{opacity:.25}}
+.l-sign{animation:l-sign 4.4s ease-in-out infinite}
+@keyframes l-sign{0%,100%{opacity:.7}50%{opacity:1}}
+.l-nod{animation:l-nod 5s ease-in-out infinite;transform-box:fill-box;transform-origin:20% 100%}
+@keyframes l-nod{0%,100%{transform:rotate(0)}50%{transform:rotate(3.5deg)}}
+.l-lamp{animation:l-lamp 6s ease-in-out infinite}
+@keyframes l-lamp{0%,100%{opacity:.88}50%{opacity:1}}
+.l-tick{animation:l-tick 3.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 100%}
+@keyframes l-tick{0%,100%{transform:rotate(0)}50%{transform:rotate(-3deg)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+<defs>
+  <linearGradient id="k-ih" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d7a4ff"/>
+    <stop offset="1" stop-color="#a54ce9"/>
+  </linearGradient>
+  <linearGradient id="l-metal" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#dfe2ea"/>
+    <stop offset=".35" stop-color="#c4c9d4"/>
+    <stop offset=".7" stop-color="#e3e6ed"/>
+    <stop offset="1" stop-color="#b9bfcb"/>
+  </linearGradient>
+  <linearGradient id="l-glass" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1f2550"/>
+    <stop offset="1" stop-color="#363d6e"/>
+  </linearGradient>
+  <radialGradient id="l-street" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#fff0c2" stop-opacity=".95"/>
+    <stop offset=".3" stop-color="#ffd98a" stop-opacity=".45"/>
+    <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="l-wallglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#ffdca0" stop-opacity=".4"/>
+    <stop offset="1" stop-color="#ffdca0" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="l-spill" x1="1" y1="0" x2="0" y2="0">
+    <stop offset="0" stop-color="#ffe2a6" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#ffe2a6" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="l-refl" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".3"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="l-reflw" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#c08758" stop-opacity=".34"/>
+    <stop offset="1" stop-color="#c08758" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="l-reflc" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#e0a93e" stop-opacity=".3"/>
+    <stop offset="1" stop-color="#e0a93e" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="l-cyl" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity=".16"/>
+    <stop offset=".28" stop-color="#fff" stop-opacity=".16"/>
+    <stop offset=".55" stop-color="#fff" stop-opacity="0"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".24"/>
+  </linearGradient>
+  <radialGradient id="l-signglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#e9dcff" stop-opacity=".75"/>
+    <stop offset=".55" stop-color="#c9b2ff" stop-opacity=".25"/>
+    <stop offset="1" stop-color="#c9b2ff" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="l-panes">
+    <rect x="1432" y="136" width="168" height="34" rx="2"/>
+    <rect x="1432" y="178" width="76" height="246" rx="2"/>
+    <rect x="1516" y="178" width="84" height="246" rx="2"/>
+  </clipPath>
+  <g id="gk-head">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24"/>
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M10.2-2.6C16.8-3 21.6-1.4 24.6 1.2 21.2 3.6 15.6 4.6 10.2 3.6Z" fill="#2b2631"/>
+    <path d="M10.4 1.1 22.8 1.4" stroke="#14111a" stroke-width=".9" stroke-linecap="round"/>
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea"/>
+    <circle cx="5.6" cy="-3.4" r="1.9" fill="#f6f2ea"/>
+    <circle cx="6.1" cy="-3.4" r="1.1" fill="#0d0b12"/>
+  </g>
+  <g id="gk-head-honk">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24"/>
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M10-3.2C16.6-5.4 22-5.4 25.4-4 22-1.6 16-.4 10.4.2Z" fill="#2b2631"/>
+    <path d="M10.4 1.8C15.4 3.4 20.2 6.6 22.6 9.6 17.6 9.8 13 7.6 10 4.8Z" fill="#2b2631"/>
+    <path d="M10.6.4C15 .8 19.4 3.4 22.6 8.6" fill="none" stroke="#5a2430" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea"/>
+    <path d="M3.6-4.2C4.8-5.6 6.8-5.6 8-4.2" fill="none" stroke="#f6f2ea" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <g id="gk-body">
+    <path d="M24 75 3.5 69.5C5.4 77 5 82 3 88L21 95Z" fill="#1d1a24"/>
+    <path d="M5.2 86.4 21 95 20.4 100.6Z" fill="#f2ede4"/>
+    <path d="M20 74C30 64 50 61.5 63 65.5 75.5 69.5 84 79.5 84 91 84 103.5 73 112.5 56.5 113 40 113.5 26 107 18.6 97 13.2 89.4 13.8 80.6 20 74Z" fill="currentColor"/>
+    <path d="M18.6 97C26 107 40 113.5 56.5 113 73 112.5 84 103.5 84 91 84 89 83.6 87 83 85.2 80 99 68 106.6 53 106.2 38.4 105.8 27 100.6 18.6 92.6 18 94.2 18 95.8 18.6 97Z" fill="#000" opacity=".2"/>
+    <path d="M24 73.4C34.6 66.4 50.2 64.6 61.6 67.6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.6" stroke-linecap="round"/>
+    <rect x="54" y="92" width="22" height="11" rx="4.5" fill="#000" opacity=".16"/>
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="currentColor"/>
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="#000" opacity=".14"/>
+    <path d="M52.6 66.2C53.6 61.4 58 59.4 62.4 60.6" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round"/>
+    <path d="M76.4 74.6 76 84.4M79.6 73.8 80.4 82.6" stroke="#f6f2ea" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="76" cy="85.4" r="1.3" fill="#f6f2ea"/>
+    <circle cx="80.5" cy="83.6" r="1.3" fill="#f6f2ea"/>
+  </g>
+  <g id="gk-legs">
+    <rect x="41" y="106" width="4.6" height="21" rx="2" fill="#2b2630"/>
+    <rect x="54" y="106" width="4.6" height="21" rx="2" fill="#24202a"/>
+    <path d="M35.6 130C35.6 127 38.6 125.6 43.4 125.6 47.6 125.6 51 127 51 130Z" fill="#2b2630"/>
+    <path d="M48.6 130C48.6 127 51.6 125.6 56.4 125.6 60.6 125.6 64 127 64 130Z" fill="#24202a"/>
+  </g>
+  <g id="gk-sleeve">
+    <path d="M27 82.6C37.6 73 56.6 73.4 66.4 81.8 69.4 89.6 63.4 98.6 50.6 99.4 39.6 99.8 29.4 93.2 27 82.6Z" fill="currentColor"/>
+    <path d="M27 82.6C37.6 73 56.6 73.4 66.4 81.8 69.4 89.6 63.4 98.6 50.6 99.4 39.6 99.8 29.4 93.2 27 82.6Z" fill="#000" opacity=".1"/>
+    <path d="M31.4 84.4C40.6 77.4 54.6 77.6 62.6 83.4" fill="none" stroke="#000" stroke-opacity=".16" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <symbol id="goose-point" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M45 82C52 74 63 71.4 72 74.6 82.4 67.4 93.6 58 101.4 47.6 104.6 46.6 107 49.4 105.6 53 99 64.4 88.8 76.4 77.6 85.6 66.2 93 52.4 93.2 45 82Z" fill="currentColor"/>
+    <path d="M45 82C52 74 63 71.4 72 74.6 82.4 67.4 93.6 58 101.4 47.6 104.6 46.6 107 49.4 105.6 53 99 64.4 88.8 76.4 77.6 85.6 66.2 93 52.4 93.2 45 82Z" fill="#000" opacity=".08"/>
+    <path d="M100 47.4C101.6 43 104.6 41.4 107.4 43 108.6 46.6 107.4 50 104.6 51.6Z" fill="#1d1a24"/>
+    <use href="#gk-head" transform="translate(76 18)"/>
+  </symbol>
+  <symbol id="goose-carry" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M30 84C40 75 57 74 68 80.6 76 84 84.4 85.6 92.4 85 96 85.4 97 89.4 93.6 91.6 84.6 95.4 74.4 97.6 60 99 44 100.4 32 94.6 30 84Z" fill="currentColor"/>
+    <path d="M30 84C40 75 57 74 68 80.6 76 84 84.4 85.6 92.4 85 96 85.4 97 89.4 93.6 91.6 84.6 95.4 74.4 97.6 60 99 44 100.4 32 94.6 30 84Z" fill="#000" opacity=".1"/>
+    <use href="#gk-head" transform="translate(76 18) rotate(6)"/>
+  </symbol>
+  <!-- help-desk goose: kit stand pose + open beak + headset -->
+  <symbol id="goose-help" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M66.8 62C67.4 50 69.2 38.6 72 28.6" fill="none" stroke="#3b3647" stroke-width="1.4" stroke-linecap="round"/>
+    <use href="#gk-sleeve"/>
+    <g transform="translate(76 18)">
+      <use href="#gk-head-honk"/>
+      <path d="M-7.4-5.4C-8.2-11.4-3.2-14 2.2-12.4" fill="none" stroke="#6b6680" stroke-width="2.6" stroke-linecap="round"/>
+      <ellipse cx="-6.4" cy="-2.4" rx="4" ry="4.8" fill="#3d3a52"/>
+      <ellipse cx="-6.4" cy="-2.4" rx="2.6" ry="3.2" fill="#ff6b81"/>
+      <ellipse cx="-6.8" cy="-2.8" rx="1.2" ry="1.6" fill="#ff9aaa"/>
+      <path d="M-4 1.6C-1.4 6.8 3.6 8.2 8.4 6.6" fill="none" stroke="#3d3a52" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="9.2" cy="6.3" r="2" fill="#3d3a52"/>
+      <circle class="l-mic" cx="9.4" cy="6.1" r=".9" fill="#6ff2a0"/>
+    </g>
+  </symbol>
+  <symbol id="plant-tall" viewBox="0 0 110 150" overflow="visible">
+    <ellipse cx="55" cy="149" rx="30" ry="3.6" fill="#000" opacity=".16"/>
+    <path d="M55 112C54 92 50 70 40 50M55 112C57 88 64 66 78 44M55 112C55 90 56 70 58 36M55 112C50 96 36 84 20 80M55 112C62 98 78 88 94 86" fill="none" stroke="#3b8a56" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M40 50C26 46 16 32 22 18 34 14 46 26 44 40Z" fill="#4fae6e"/>
+    <path d="M78 44C90 36 104 38 104 52 96 62 82 58 76 50Z" fill="#3f9a5e"/>
+    <path d="M58 36C52 22 58 6 70 6 78 16 72 32 62 38Z" fill="#59b877"/>
+    <path d="M20 80C6 80 -2 68 4 58 16 54 26 66 24 78Z" fill="#3f9a5e"/>
+    <path d="M94 86C106 82 114 92 110 102 98 104 90 96 92 88Z" fill="#4fae6e"/>
+    <path d="M32 24 40 38M64 12 63 30M96 46 82 52M10 64 22 76" stroke="#2f7a4a" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M30 112H80L74 150H36Z" fill="#c96f4a"/>
+    <path d="M64 112H80L74 150H62Z" fill="#a9573a"/>
+    <rect x="27" y="108" width="56" height="8" rx="3" fill="#d98560"/>
+  </symbol>
+  <symbol id="plant-small" viewBox="0 0 30 30">
+    <path d="M15 14C9 12 6 6 8 2 13 4 15 8 15 14ZM15 14C21 12 24 6 22 2 17 4 15 8 15 14ZM15 14C12 8 13 2 15 0 17 2 18 8 15 14Z" fill="#59b877"/>
+    <path d="M6 14H24L22 30H8Z" fill="#ece6dc"/>
+    <path d="M18 14H24L22 30H17Z" fill="#d3cbbd"/>
+  </symbol>
+  <symbol id="cup" viewBox="0 0 22 34">
+    <path d="M3.6 8 18.4 8 16.4 34 5.6 34Z" fill="#f2eef8"/>
+    <path d="M14.4 8 18.4 8 16.4 34 13.2 34Z" fill="#d7d0e4"/>
+    <path d="M4.6 15 17.6 15 17 23 5.2 23Z" fill="#8b5cf6"/>
+    <rect x="2" y="4" width="18" height="5" rx="2.2" fill="#3b3550"/>
+    <rect x="5" y="1.6" width="12" height="3.4" rx="1.6" fill="#4b4466"/>
+  </symbol>
+  <symbol id="ih-mark" viewBox="0 0 40 40">
+    <rect width="40" height="40" rx="10" fill="url(#k-ih)"/>
+    <circle cx="11.4" cy="11.6" r="2.7" fill="#fff"/>
+    <rect x="9.1" y="16.2" width="4.6" height="14.2" rx="1.2" fill="#fff"/>
+    <path d="M17 9.4H21.6V17.6C23 15.8 25 14.8 27.4 14.8 31.6 14.8 33.8 17.6 33.8 22V30.4H29.2V22.8C29.2 20.4 28.2 19.2 26.2 19.2 23.8 19.2 21.6 20.8 21.6 23.8V30.4H17Z" fill="#fff"/>
+  </symbol>
+</defs>
+
+<!-- street-lamp glow reaching in through the entrance -->
+<ellipse cx="1500" cy="300" rx="190" ry="170" fill="url(#l-wallglow)"/>
+
+<!-- floor: polished stone tile -->
+<rect x="0" y="440" width="1600" height="40" fill="#b8aecb"/>
+<rect x="34" y="443" width="138" height="26" fill="url(#l-refl)"/>
+<rect x="662" y="443" width="328" height="28" fill="url(#l-reflw)"/>
+<rect x="1124" y="443" width="162" height="22" fill="url(#l-reflc)"/>
+<path d="M1600 440V480H1180Z" fill="url(#l-spill)"/>
+<rect x="0" y="440" width="1600" height="3" fill="#d2c9e0"/>
+<rect x="0" y="443" width="1600" height="1.2" fill="#000" opacity=".08"/>
+<path d="M0 459.5H1600" stroke="#9f95b5" stroke-width="1.2"/>
+<path d="M0 460.6H1600" stroke="#fff" stroke-opacity=".25" stroke-width="1"/>
+<path d="M128 443.6V480M256 443.6V480M384 443.6V480M512 443.6V480M640 443.6V480M768 443.6V480M896 443.6V480M1024 443.6V480M1152 443.6V480M1280 443.6V480M1408 443.6V480M1536 443.6V480" stroke="#9f95b5" stroke-width="1.2"/>
+<path d="M140 446 168 446 146 478H118ZM430 446H446L424 478H408ZM1060 446H1088L1066 478H1038ZM1330 446H1342L1320 478H1308Z" fill="#fff" opacity=".1"/>
+
+<!-- contact shadows -->
+<g fill="#000" opacity=".16">
+  <ellipse cx="103" cy="440" rx="94" ry="3.4"/>
+  <ellipse cx="290" cy="440" rx="49" ry="5"/>
+  <ellipse cx="826" cy="440" rx="172" ry="4.5"/>
+  <ellipse cx="1055" cy="440" rx="42" ry="4"/>
+  <ellipse cx="1205" cy="440" rx="90" ry="4.5"/>
+</g>
+
+<!-- elevator: stone portal, brushed-metal doors, indicator -->
+<g>
+  <rect x="12" y="146" width="182" height="294" rx="4" fill="#cdc4dc"/>
+  <rect x="14" y="147" width="178" height="3" rx="1.5" fill="#fff" opacity=".5"/>
+  <rect x="178" y="146" width="16" height="294" rx="4" fill="#000" opacity=".07"/>
+  <rect x="28" y="168" width="150" height="272" rx="3" fill="#8d94a4"/>
+  <rect x="34" y="174" width="138" height="266" fill="url(#l-metal)"/>
+  <path d="M40 186V430M52 180V436M66 190V428M80 182V434M92 188V430M114 184V432M126 190V428M140 182V436M154 188V430M164 184V432" stroke="#fff" stroke-opacity=".25" stroke-width="1"/>
+  <path d="M34 178H74L34 262ZM108 178H126L108 214Z" fill="#fff" opacity=".22"/>
+  <rect x="101.8" y="174" width="2.4" height="266" fill="#6b7282"/>
+  <rect x="34" y="174" width="138" height="4" fill="#000" opacity=".12"/>
+  <rect x="80" y="151" width="46" height="14" rx="5" fill="#3d3a52"/>
+  <g class="l-led">
+    <circle cx="95" cy="158" r="7.4" fill="#ffd468" opacity=".35"/>
+    <path d="M95 153.8 99.6 161.4H90.4Z" fill="#ffd468"/>
+  </g>
+  <path d="M111 161.6 106.6 154.4H115.4Z" fill="#6b6680"/>
+</g>
+<rect x="200" y="304" width="14" height="38" rx="4" fill="#c7ccd8"/>
+<rect x="201.2" y="305.4" width="2.6" height="35" rx="1.3" fill="#fff" opacity=".55"/>
+<circle cx="207" cy="316" r="5.6" fill="#ffd468" opacity=".4"/>
+<circle cx="207" cy="316" r="3.4" fill="#ffd468"/>
+<circle cx="207" cy="330" r="3.4" fill="#9aa1b0"/>
+
+<!-- building directory -->
+<g>
+  <rect x="236" y="122" width="120" height="124" rx="6" fill="#3d3a52"/>
+  <rect x="238" y="123" width="116" height="2.6" rx="1.3" fill="#fff" opacity=".2"/>
+  <rect x="340" y="122" width="16" height="124" rx="6" fill="#000" opacity=".14"/>
+  <use href="#ih-mark" x="246" y="130" width="18" height="18"/>
+  <rect x="272" y="133" width="56" height="5" rx="2.5" fill="#e7e2f0" opacity=".9"/>
+  <rect x="272" y="141.4" width="34" height="3" rx="1.5" fill="#e7e2f0" opacity=".5"/>
+  <rect x="246" y="154.5" width="9" height="7" rx="2" fill="#ffd468"/>
+  <rect x="246" y="166.5" width="9" height="7" rx="2" fill="#46d4e8"/>
+  <rect x="246" y="178.5" width="9" height="7" rx="2" fill="#a78bfa"/>
+  <rect x="246" y="190.5" width="9" height="7" rx="2" fill="#ff6b81"/>
+  <rect x="246" y="202.5" width="9" height="7" rx="2" fill="#c482f4"/>
+  <rect x="246" y="214.5" width="9" height="7" rx="2" fill="#5ec58f"/>
+  <rect x="246" y="226.5" width="9" height="7" rx="2" fill="#f6f2ea"/>
+  <g fill="#e7e2f0" opacity=".72">
+    <rect x="262" y="156" width="62" height="4" rx="2"/>
+    <rect x="262" y="168" width="48" height="4" rx="2"/>
+    <rect x="262" y="180" width="70" height="4" rx="2"/>
+    <rect x="262" y="192" width="54" height="4" rx="2"/>
+    <rect x="262" y="204" width="40" height="4" rx="2"/>
+    <rect x="262" y="216" width="58" height="4" rx="2"/>
+  </g>
+  <rect x="262" y="228" width="30" height="4" rx="2" fill="#ffd468"/>
+  <circle cx="336" cy="230" r="5" fill="#ff6b81" opacity=".35"/>
+  <circle cx="336" cy="230" r="2.8" fill="#ff6b81"/>
+</g>
+
+<!-- goose waiting for the elevator with a pillow (bedtime run) -->
+<g class="gz">
+<g transform="matrix(-1 0 0 1 570 0)">
+  <use href="#goose-carry" x="205" y="251" width="160" height="189" color="#5ec58f"/>
+</g>
+<g>
+  <path d="M207 350C214 345.6 238 345.6 244.6 350 247.6 358 247.6 368 244.6 376 238 380.4 214 380.4 207 376 204 368 204 358 207 350Z" fill="#e9e4ff"/>
+  <path d="M232 347.4C238 347.8 242 348.6 244.6 350 247.6 358 247.6 368 244.6 376 241 378.4 236 379.6 230 380 236 372 237 356 232 347.4Z" fill="#000" opacity=".1"/>
+  <path d="M212 352.4C220 350 232 350 240 352" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".9"/>
+  <path d="M206.4 362.6C218 364.6 234 364.6 245.6 362.6" fill="none" stroke="#a3b3ff" stroke-width="3"/>
+</g>
+</g>
+
+<!-- snake plant -->
+<g>
+  <ellipse cx="428" cy="440" rx="27" ry="3.6" fill="#000" opacity=".16"/>
+  <path d="M414 404C404 390 398 372 397 354 408 370 415 388 421 404Z" fill="#59b877"/>
+  <path d="M443 404C451 390 457 376 461 360 462 378 456 394 449 404Z" fill="#4fae6e"/>
+  <path d="M420 402C410 378 406 350 410 320 419 346 425 376 427 402Z" fill="#4fae6e"/>
+  <path d="M436 402C440 376 446 350 455 324 457 352 451 380 443 402Z" fill="#3a8a55"/>
+  <path d="M427 402C421 370 423 332 430 296 437 332 438 370 433 402Z" fill="#3f9a5e"/>
+  <path d="M411 324C409 350 413 378 421 400M454 328C449 352 444 378 440 400M430 300C426 332 426 368 429 400" fill="none" stroke="#cfe39a" stroke-opacity=".55" stroke-width="1.1" stroke-linecap="round"/>
+  <path d="M424 344 434 342M423 362 434 360M424 380 433 379M413 352 420 349M447 352 452 350" stroke="#2f7a4a" stroke-opacity=".5" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M405 400H451L448 440H408Z" fill="#ece6dc"/>
+  <path d="M437 400H451L448 440H435Z" fill="#d3cbbd"/>
+  <rect x="402" y="396" width="52" height="7" rx="3" fill="#f6f1e8"/>
+  <rect x="407" y="418" width="42" height="3" fill="#8b5cf6" opacity=".7"/>
+</g>
+
+<!-- visitor handing a work-order ticket over the desk -->
+<g class="gz-walk" data-from="l">
+<ellipse cx="575" cy="440" rx="49" ry="5" fill="#000" opacity=".16"/>
+<g class="gz">
+<g class="l-tick">
+  <g transform="rotate(-8 640 312)">
+    <rect x="628" y="281" width="25" height="33" rx="2" fill="#fbf6ea"/>
+    <rect x="628" y="281" width="25" height="7.4" rx="2" fill="#ffc24d"/>
+    <circle cx="640.5" cy="284.6" r="1.6" fill="#3d3a52" opacity=".45"/>
+    <path d="M632 294H648M632 299H644.6M632 304H647" stroke="#3a3346" stroke-opacity=".38" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M629 309.4H652" stroke="#3a3346" stroke-opacity=".3" stroke-width="1" stroke-dasharray="2 2"/>
+  </g>
+</g>
+<use href="#goose-point" x="488" y="251" width="160" height="189" color="#ff6b81"/>
+</g>
+</g>
+
+<!-- "?" help sign glow -->
+<circle class="l-sign" cx="962" cy="172" r="84" fill="url(#l-signglow)"/>
+
+<!-- help-desk goose with headset, behind the curved desk -->
+<g class="gz" data-say="ask me!">
+<g transform="matrix(-1 0 0 1 1560 0)">
+  <use href="#goose-help" x="700" y="174" width="160" height="189" color="#46d4e8"/>
+</g>
+</g>
+
+<!-- curved help desk -->
+<g>
+  <path d="M660 332H992V430C992 435.5 988 440 982 440H670C664 440 660 435.5 660 430Z" fill="#c08758"/>
+  <path d="M662.5 336V430M670 336V432M682.2 336V434M698.8 336V434M719.3 336V434M743 336V434M769.2 336V434M797.1 336V434M826 336V434M854.9 336V434M882.8 336V434M909 336V434M932.7 336V434M953.2 336V434M969.8 336V434M982 336V432M989.5 336V430" stroke="#9a6a44" stroke-opacity=".5" stroke-width="1.6"/>
+  <rect x="660" y="344" width="332" height="9" fill="#8b5cf6"/>
+  <rect x="660" y="352" width="332" height="2" fill="#000" opacity=".12"/>
+  <use href="#ih-mark" x="810" y="374" width="32" height="32"/>
+  <path d="M660 332H992V430C992 435.5 988 440 982 440H670C664 440 660 435.5 660 430Z" fill="url(#l-cyl)"/>
+  <rect x="664" y="428" width="324" height="12" rx="4" fill="#3d3a52"/>
+  <rect x="646" y="318" width="360" height="15" rx="7.5" fill="#ece6f2"/>
+  <rect x="650" y="319.2" width="352" height="3" rx="1.5" fill="#fff" opacity=".85"/>
+  <rect x="646" y="329.6" width="360" height="3.4" rx="1.7" fill="#b9b0c9"/>
+  <path d="M700 325C720 323 736 326.4 760 324.6M880 325.2C900 323.6 914 326.8 940 324.8" stroke="#c9c0d8" stroke-width="1" fill="none"/>
+  <!-- service bell -->
+  <rect x="677" y="313.6" width="26" height="4.4" rx="2.2" fill="#9aa1b0"/>
+  <path d="M680 314C680 304.6 700 304.6 700 314Z" fill="#e7c46a"/>
+  <path d="M692 306C696.4 307.6 699 310.4 700 314H694Z" fill="#c9962c" opacity=".6"/>
+  <path d="M683.4 310C684.6 307.8 686.6 306.6 689 306.2" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="1.4" stroke-linecap="round"/>
+  <circle cx="690" cy="303.6" r="2" fill="#c9962c"/>
+  <!-- ticket rail of answered work orders -->
+  <rect x="861" y="286" width="4" height="32" rx="2" fill="#9aa1b0"/>
+  <rect x="921" y="286" width="4" height="32" rx="2" fill="#7d8494"/>
+  <rect x="857" y="284" width="72" height="4" rx="2" fill="#c7ccd8"/>
+  <g>
+    <rect x="868" y="289" width="15" height="21" rx="1.6" fill="#fbf6ea"/>
+    <rect x="868" y="289" width="15" height="5" rx="1.6" fill="#ff6b81"/>
+    <rect x="886" y="289" width="15" height="21" rx="1.6" fill="#fbf6ea" transform="rotate(4 893 289)"/>
+    <rect x="886" y="289" width="15" height="5" rx="1.6" fill="#46d4e8" transform="rotate(4 893 289)"/>
+    <rect x="904" y="289" width="15" height="21" rx="1.6" fill="#fbf6ea" transform="rotate(-3 911 289)"/>
+    <rect x="904" y="289" width="15" height="5" rx="1.6" fill="#ffc24d" transform="rotate(-3 911 289)"/>
+    <path d="M871 299H880M871 303H878M889 299.6H898M889 303.6H895M907 298.6H916M907 302.6H914" stroke="#3a3346" stroke-opacity=".35" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M874 287V291M892 287V291M910 287V291" stroke="#3d3a52" stroke-width="2.6" stroke-linecap="round"/>
+  </g>
+  <!-- big "?" sign on a post -->
+  <rect x="959" y="212" width="6" height="104" fill="#9aa1b0"/>
+  <rect x="959.8" y="214" width="1.8" height="100" fill="#fff" opacity=".5"/>
+  <rect x="948" y="312" width="28" height="7" rx="3.5" fill="#3d3a52"/>
+  <circle cx="962" cy="172" r="44" fill="#8b5cf6"/>
+  <path d="M1000 192C993 206 979 215.6 962 216 952 216.2 943 213 936 207.4 952 213 976 210 990 194 999 184 1003 172 1002 160 1005 170 1004 182 1000 192Z" fill="#000" opacity=".14"/>
+  <circle cx="962" cy="172" r="38.4" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+  <path d="M926.6 158C930.6 144 942 135 955 132.4" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M949.4 160.4C949.4 150.4 955.4 145 962.6 145 970.6 145 976 150.4 976 157.6 976 165 970.6 168.2 966.6 171.2 963.6 173.6 962.6 176.4 962.6 181.4" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="962.6" cy="194.4" r="5.6" fill="#fff"/>
+</g>
+
+<!-- lost-and-found crate: a hoodie and one lonely sock -->
+<g>
+  <rect x="1016" y="388" width="78" height="52" rx="4" fill="#4a4660"/>
+  <rect x="1016" y="388" width="78" height="3.4" rx="1.7" fill="#6b6680"/>
+  <rect x="1078" y="388" width="16" height="52" rx="4" fill="#000" opacity=".15"/>
+  <rect x="1041" y="398" width="28" height="7" rx="3.5" fill="#2e2b40"/>
+  <path d="M1027 413V430M1037 413V430M1047 413V430M1057 413V430M1067 413V430" stroke="#2e2b40" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M1020 391C1019 381 1027 375.4 1038 375H1058C1068 375.4 1073 381 1072 391Z" fill="#ff6b81"/>
+  <path d="M1058 375C1068 375.4 1073 381 1072 391H1061C1062.6 384 1061.6 378.6 1058 375Z" fill="#000" opacity=".12"/>
+  <path d="M1034.6 377.4C1033.6 365.4 1040 357.6 1048 357.6 1056 357.6 1062.4 365.4 1061.4 377.4Z" fill="#ff6b81"/>
+  <path d="M1054 359C1059 361.6 1062 368 1061.4 377.4H1057.4C1057.6 369.6 1056.4 363 1054 359Z" fill="#000" opacity=".1"/>
+  <path d="M1039.8 377.4C1039.4 369.6 1043.4 364.2 1048 364.2 1052.6 364.2 1056.6 369.6 1056.2 377.4Z" fill="#8a2e40"/>
+  <path d="M1043.6 377.8 1043 386.6M1052.4 377.8 1053 386.6" stroke="#fbf6ea" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="1043" cy="387.4" r="1.5" fill="#fbf6ea"/>
+  <circle cx="1053" cy="387.4" r="1.5" fill="#fbf6ea"/>
+  <path d="M1024.6 381.4C1029 377.8 1034 376.6 1037.6 376.6" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1023.6 388C1020.6 398 1021.6 410 1025.6 420 1029.6 422.4 1033.6 420.4 1033.2 416.4 1030.4 406 1030.4 398 1032 390Z" fill="#ff6b81"/>
+  <path d="M1024.6 414.6C1027.4 416.6 1030.6 416.6 1033 414.4 1033.6 416 1033.6 418 1033.2 419 1030.6 422 1027.6 422.2 1025.6 420Z" fill="#000" opacity=".2"/>
+  <path d="M1077 383H1088V405.4C1088 407.8 1089.6 409.4 1092 409.4H1095C1098.4 409.4 1101 412 1101 415.4 1101 418.8 1098.4 421.4 1095 421.4H1085C1080.6 421.4 1077 417.8 1077 413.4Z" fill="#fbf6ea"/>
+  <path d="M1077 390H1088M1077 396H1088" stroke="#46d4e8" stroke-width="2.4"/>
+  <path d="M1095 409.4C1098.4 409.4 1101 412 1101 415.4 1101 418.8 1098.4 421.4 1095 421.4H1092.6V409.4Z" fill="#46d4e8"/>
+  <rect x="1076" y="381" width="13" height="4.4" rx="2" fill="#46d4e8"/>
+  <rect x="1084.6" y="383" width="3.4" height="24" fill="#000" opacity=".08"/>
+</g>
+
+<!-- armchair with a dozing goose -->
+<g>
+  <path d="M1130 426H1141L1139 440H1132ZM1269 426H1280L1278 440H1271Z" fill="#8d5f3d"/>
+  <rect x="1136" y="300" width="138" height="108" rx="28" fill="#e0a93e"/>
+  <rect x="1238" y="300" width="36" height="108" rx="22" fill="#000" opacity=".1"/>
+  <path d="M1152 318C1172 306 1220 304 1248 311" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="1172" cy="340" r="2.2" fill="#b07d22"/>
+  <circle cx="1205" cy="336" r="2.2" fill="#b07d22"/>
+  <circle cx="1238" cy="340" r="2.2" fill="#b07d22"/>
+  <g class="gz" data-say="zzz">
+  <g transform="translate(1135 230) scale(1.4545)" color="#a3b3ff">
+    <g class="l-nod">
+      <path d="M62.6 84C66.4 64 73.6 50.6 82.2 41.6L91.4 47.6C84.6 55.4 79.8 66 78.2 84Z" fill="#1d1a24"/>
+      <g transform="translate(90 46) rotate(52)">
+        <use href="#gk-head"/>
+        <circle cx="5.6" cy="-3.4" r="2.5" fill="#1d1a24"/>
+        <path d="M3.4-4C4.6-2.2 6.8-2.2 8-4" fill="none" stroke="#f6f2ea" stroke-width="1.2" stroke-linecap="round"/>
+      </g>
+    </g>
+    <use href="#gk-body"/>
+    <use href="#gk-sleeve"/>
+  </g>
+  </g>
+  <rect x="1140" y="390" width="130" height="24" rx="9" fill="#f0c56a"/>
+  <rect x="1140" y="404" width="130" height="10" rx="5" fill="#000" opacity=".08"/>
+  <rect x="1124" y="408" width="162" height="20" rx="7" fill="#c58f2c"/>
+  <rect x="1120" y="350" width="30" height="78" rx="13" fill="#e0a93e"/>
+  <rect x="1123.4" y="354" width="8" height="40" rx="4" fill="#fff" opacity=".25"/>
+  <rect x="1260" y="350" width="30" height="78" rx="13" fill="#c58f2c"/>
+  <rect x="1263.4" y="354" width="8" height="34" rx="4" fill="#fff" opacity=".16"/>
+  <path d="M1292 286H1299L1292 293H1299M1304 262H1314L1304 272H1314" fill="none" stroke="#8b80a8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" opacity=".75"/>
+</g>
+
+<use href="#plant-tall" x="1292" y="222" width="160" height="218"/>
+
+<!-- glass entrance doors, street lamp glowing outside -->
+<g>
+  <rect x="1424" y="128" width="176" height="312" fill="#3d3a52"/>
+  <rect x="1424" y="128" width="176" height="4" fill="#5c587a"/>
+  <g clip-path="url(#l-panes)">
+    <rect x="1424" y="128" width="176" height="312" fill="url(#l-glass)"/>
+    <path d="M1424 402C1470 396 1530 395 1600 398V440H1424Z" fill="#282d55"/>
+    <rect x="1568" y="204" width="4.4" height="220" fill="#141831" opacity=".85"/>
+    <path d="M1555 206C1555 197 1585 197 1585 206Z" fill="#141831"/>
+    <circle class="l-lamp" cx="1570" cy="212" r="112" fill="url(#l-street)"/>
+    <circle cx="1570" cy="208" r="4.4" fill="#fff6dc"/>
+    <path d="M1438 186H1462L1438 240ZM1522 186H1534L1522 210Z" fill="#fff" opacity=".1"/>
+  </g>
+  <rect x="1508" y="170" width="8" height="270" fill="#2e2b40"/>
+  <rect x="1424" y="170" width="176" height="8" fill="#2e2b40"/>
+  <rect x="1495" y="270" width="5" height="76" rx="2.5" fill="#c7ccd8"/>
+  <rect x="1524" y="270" width="5" height="76" rx="2.5" fill="#c7ccd8"/>
+  <rect x="1432" y="424" width="76" height="12" fill="#9aa1b0"/>
+  <rect x="1516" y="424" width="84" height="12" fill="#9aa1b0"/>
+  <rect x="1432" y="424" width="76" height="2" fill="#fff" opacity=".35"/>
+  <rect x="1516" y="424" width="84" height="2" fill="#fff" opacity=".35"/>
+</g>
+</svg>

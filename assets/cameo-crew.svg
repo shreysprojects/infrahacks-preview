@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 6 162 176">
+<!-- InfraHacks HQ · Crew Room: a spare badge on the corkboard. Drawn with art/kit.svg parts at x1.45. -->
+<defs>
+<g id="gk-body">
+    <path d="M24 75 3.5 69.5C5.4 77 5 82 3 88L21 95Z" fill="#1d1a24" />
+    <path d="M5.2 86.4 21 95 20.4 100.6Z" fill="#f2ede4" />
+    <path d="M20 74C30 64 50 61.5 63 65.5 75.5 69.5 84 79.5 84 91 84 103.5 73 112.5 56.5 113 40 113.5 26 107 18.6 97 13.2 89.4 13.8 80.6 20 74Z" fill="currentColor" />
+    <path d="M18.6 97C26 107 40 113.5 56.5 113 73 112.5 84 103.5 84 91 84 89 83.6 87 83 85.2 80 99 68 106.6 53 106.2 38.4 105.8 27 100.6 18.6 92.6 18 94.2 18 95.8 18.6 97Z" fill="#000" opacity=".2" />
+    <path d="M24 73.4C34.6 66.4 50.2 64.6 61.6 67.6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.6" stroke-linecap="round" />
+    <rect x="54" y="92" width="22" height="11" rx="4.5" fill="#000" opacity=".16" />
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="currentColor" />
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="#000" opacity=".14" />
+    <path d="M52.6 66.2C53.6 61.4 58 59.4 62.4 60.6" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    <path d="M76.4 74.6 76 84.4M79.6 73.8 80.4 82.6" stroke="#f6f2ea" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="76" cy="85.4" r="1.3" fill="#f6f2ea" />
+    <circle cx="80.5" cy="83.6" r="1.3" fill="#f6f2ea" />
+  </g>
+  
+<g id="gk-sleeve">
+    <path d="M27 82.6C37.6 73 56.6 73.4 66.4 81.8 69.4 89.6 63.4 98.6 50.6 99.4 39.6 99.8 29.4 93.2 27 82.6Z" fill="currentColor" />
+    <path d="M27 82.6C37.6 73 56.6 73.4 66.4 81.8 69.4 89.6 63.4 98.6 50.6 99.4 39.6 99.8 29.4 93.2 27 82.6Z" fill="#000" opacity=".1" />
+    <path d="M31.4 84.4C40.6 77.4 54.6 77.6 62.6 83.4" fill="none" stroke="#000" stroke-opacity=".16" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+  
+<g id="gk-head">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24" />
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M10.2-2.6C16.8-3 21.6-1.4 24.6 1.2 21.2 3.6 15.6 4.6 10.2 3.6Z" fill="#2b2631" />
+    <path d="M10.4 1.1 22.8 1.4" stroke="#14111a" stroke-width=".9" stroke-linecap="round" />
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea" />
+    <circle cx="5.6" cy="-3.4" r="1.9" fill="#f6f2ea" />
+    <circle cx="6.1" cy="-3.4" r="1.1" fill="#0d0b12" />
+  </g>
+  
+<symbol id="goose-sit" viewBox="0 0 110 130" overflow="visible">
+    <g transform="translate(0 15)">
+      <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24" />
+      <use href="#gk-body" />
+      <path d="M66.8 62C67.4 50 69.2 38.6 72 28.6" fill="none" stroke="#3b3647" stroke-width="1.4" stroke-linecap="round" />
+      <use href="#gk-sleeve" />
+      <use href="#gk-head" transform="translate(76 18) rotate(-4)" />
+    </g>
+  </symbol>
+  
+  
+<symbol id="lanyard" viewBox="0 0 20 52" overflow="visible">
+    <path d="M3.4 0C1.6 13 5 25 10 31.6M16.6 0C18.4 13 15 25 10 31.6" fill="none" stroke="#c482f4" stroke-width="2.4" stroke-linecap="round" />
+    <rect x="8.8" y="30" width="2.4" height="4" rx=".8" fill="#9aa1b0" />
+    <rect x="2" y="33" width="16" height="19" rx="2.2" fill="#fbf6ea" />
+    <rect x="2" y="33" width="16" height="5" rx="2" fill="#8b5cf6" />
+    <circle cx="10" cy="43.6" r="2.8" fill="#c7ccd8" />
+    <rect x="5" y="48" width="10" height="1.8" rx=".9" fill="#c7ccd8" />
+  </symbol>
+  
+  
+<g id="gk-head-honk">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24" />
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M10-3.2C16.6-5.4 22-5.4 25.4-4 22-1.6 16-.4 10.4.2Z" fill="#2b2631" />
+    <path d="M10.4 1.8C15.4 3.4 20.2 6.6 22.6 9.6 17.6 9.8 13 7.6 10 4.8Z" fill="#2b2631" />
+    <path d="M10.6.4C15 .8 19.4 3.4 22.6 8.6" fill="none" stroke="#5a2430" stroke-width="1.4" stroke-linecap="round" />
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea" />
+    <path d="M3.6-4.2C4.8-5.6 6.8-5.6 8-4.2" fill="none" stroke="#f6f2ea" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+  
+</defs>
+<ellipse cx="78" cy="181" rx="50" ry="3.4" fill="#000" opacity=".2"/><g class="gz" data-say="you next?"><g transform="matrix(-1 0 0 1 162 0)"><use href="#goose-sit" x="-4" y="-4" width="160" height="189" color="#ff6b81"/><g transform="rotate(8 142 48)"><use href="#lanyard" x="132" y="44" width="21" height="55"/></g></g></g>
+</svg>

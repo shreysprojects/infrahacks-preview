@@ -1,0 +1,392 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 480">
+<!-- InfraHacks HQ · Floor 6 · kickoff (Sat 10:00). Drawn with art/kit.svg parts at x1.45. -->
+<style>
+.kf-hop{animation:kfHop 2.4s ease-in-out infinite alternate}
+.kf-sway{transform-box:fill-box;transform-origin:50% 100%;animation:kfSway 5.6s ease-in-out infinite alternate}
+.kf-thump{transform-box:fill-box;transform-origin:50% 50%;animation:kfThump 2.2s ease-in-out infinite alternate}
+.kf-load{transform-box:fill-box;transform-origin:0 50%;animation:kfLoad 4.2s ease-in-out infinite alternate}
+.kf-drift{animation:kfDrift 3.8s ease-in-out infinite alternate}
+.kf-float{animation:kfFloat 3s ease-in-out infinite alternate}
+@keyframes kfHop{to{transform:translateY(-3px)}}
+@keyframes kfSway{from{transform:rotate(-1.4deg)}to{transform:rotate(1.4deg)}}
+@keyframes kfThump{to{transform:scale(1.05)}}
+@keyframes kfLoad{from{transform:scaleX(.86)}to{transform:scaleX(1.04)}}
+@keyframes kfDrift{to{transform:translate(1.5px,3px)}}
+@keyframes kfFloat{to{transform:translateY(-2.5px)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+<defs>
+  <!-- goose parts + poses: copied from art/kit.svg -->
+  <radialGradient id="k-screenglow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#9be7ff" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#9be7ff" stop-opacity="0"/>
+  </radialGradient>
+  <g id="gk-head">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24"/>
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M10.2-2.6C16.8-3 21.6-1.4 24.6 1.2 21.2 3.6 15.6 4.6 10.2 3.6Z" fill="#2b2631"/>
+    <path d="M10.4 1.1 22.8 1.4" stroke="#14111a" stroke-width=".9" stroke-linecap="round"/>
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea"/>
+    <circle cx="5.6" cy="-3.4" r="1.9" fill="#f6f2ea"/>
+    <circle cx="6.1" cy="-3.4" r="1.1" fill="#0d0b12"/>
+  </g>
+  <g id="gk-head-honk">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24"/>
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M10-3.2C16.6-5.4 22-5.4 25.4-4 22-1.6 16-.4 10.4.2Z" fill="#2b2631"/>
+    <path d="M10.4 1.8C15.4 3.4 20.2 6.6 22.6 9.6 17.6 9.8 13 7.6 10 4.8Z" fill="#2b2631"/>
+    <path d="M10.6.4C15 .8 19.4 3.4 22.6 8.6" fill="none" stroke="#5a2430" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea"/>
+    <path d="M3.6-4.2C4.8-5.6 6.8-5.6 8-4.2" fill="none" stroke="#f6f2ea" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <g id="gk-body">
+    <path d="M24 75 3.5 69.5C5.4 77 5 82 3 88L21 95Z" fill="#1d1a24"/>
+    <path d="M5.2 86.4 21 95 20.4 100.6Z" fill="#f2ede4"/>
+    <path d="M20 74C30 64 50 61.5 63 65.5 75.5 69.5 84 79.5 84 91 84 103.5 73 112.5 56.5 113 40 113.5 26 107 18.6 97 13.2 89.4 13.8 80.6 20 74Z" fill="currentColor"/>
+    <path d="M18.6 97C26 107 40 113.5 56.5 113 73 112.5 84 103.5 84 91 84 89 83.6 87 83 85.2 80 99 68 106.6 53 106.2 38.4 105.8 27 100.6 18.6 92.6 18 94.2 18 95.8 18.6 97Z" fill="#000" opacity=".2"/>
+    <path d="M24 73.4C34.6 66.4 50.2 64.6 61.6 67.6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.6" stroke-linecap="round"/>
+    <rect x="54" y="92" width="22" height="11" rx="4.5" fill="#000" opacity=".16"/>
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="currentColor"/>
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="#000" opacity=".14"/>
+    <path d="M52.6 66.2C53.6 61.4 58 59.4 62.4 60.6" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round"/>
+    <path d="M76.4 74.6 76 84.4M79.6 73.8 80.4 82.6" stroke="#f6f2ea" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="76" cy="85.4" r="1.3" fill="#f6f2ea"/>
+    <circle cx="80.5" cy="83.6" r="1.3" fill="#f6f2ea"/>
+  </g>
+  <g id="gk-legs">
+    <rect x="41" y="106" width="4.6" height="21" rx="2" fill="#2b2630"/>
+    <rect x="54" y="106" width="4.6" height="21" rx="2" fill="#24202a"/>
+    <path d="M35.6 130C35.6 127 38.6 125.6 43.4 125.6 47.6 125.6 51 127 51 130Z" fill="#2b2630"/>
+    <path d="M48.6 130C48.6 127 51.6 125.6 56.4 125.6 60.6 125.6 64 127 64 130Z" fill="#24202a"/>
+  </g>
+  <g id="gk-sleeve">
+    <path d="M27 82.6C37.6 73 56.6 73.4 66.4 81.8 69.4 89.6 63.4 98.6 50.6 99.4 39.6 99.8 29.4 93.2 27 82.6Z" fill="currentColor"/>
+    <path d="M27 82.6C37.6 73 56.6 73.4 66.4 81.8 69.4 89.6 63.4 98.6 50.6 99.4 39.6 99.8 29.4 93.2 27 82.6Z" fill="#000" opacity=".1"/>
+    <path d="M31.4 84.4C40.6 77.4 54.6 77.6 62.6 83.4" fill="none" stroke="#000" stroke-opacity=".16" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+  <symbol id="goose-stand" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M66.8 62C67.4 50 69.2 38.6 72 28.6" fill="none" stroke="#3b3647" stroke-width="1.4" stroke-linecap="round"/>
+    <use href="#gk-sleeve"/>
+    <use href="#gk-head" transform="translate(76 18)"/>
+  </symbol>
+  <symbol id="goose-type" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.6 84C66.4 64 73.6 50.6 82.2 41.6L91.4 47.6C84.6 55.4 79.8 66 78.2 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M27 82.6C37.6 73 56.6 72 70.6 78 80.6 80.4 92.4 84 99.6 88.6 100.6 92.4 98.4 95 94.6 94.6 85.4 94 74.4 96.6 60 98.6 44 100.6 30 94 27 82.6Z" fill="currentColor"/>
+    <path d="M27 82.6C37.6 73 56.6 72 70.6 78 80.6 80.4 92.4 84 99.6 88.6 100.6 92.4 98.4 95 94.6 94.6 85.4 94 74.4 96.6 60 98.6 44 100.6 30 94 27 82.6Z" fill="#000" opacity=".1"/>
+    <rect x="93" y="88" width="7.4" height="7.4" rx="3" fill="#000" opacity=".18"/>
+    <use href="#gk-head" transform="translate(91 41) rotate(28)"/>
+  </symbol>
+  <symbol id="goose-point" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M45 82C52 74 63 71.4 72 74.6 82.4 67.4 93.6 58 101.4 47.6 104.6 46.6 107 49.4 105.6 53 99 64.4 88.8 76.4 77.6 85.6 66.2 93 52.4 93.2 45 82Z" fill="currentColor"/>
+    <path d="M45 82C52 74 63 71.4 72 74.6 82.4 67.4 93.6 58 101.4 47.6 104.6 46.6 107 49.4 105.6 53 99 64.4 88.8 76.4 77.6 85.6 66.2 93 52.4 93.2 45 82Z" fill="#000" opacity=".08"/>
+    <path d="M100 47.4C101.6 43 104.6 41.4 107.4 43 108.6 46.6 107.4 50 104.6 51.6Z" fill="#1d1a24"/>
+    <use href="#gk-head" transform="translate(76 18)"/>
+  </symbol>
+  <symbol id="goose-honk" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C61.8 60 61.6 40 63.6 22.4L75.4 22C75.8 40 77.2 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M34 80C38 68 46 58 55 52.6 58.6 51 61.4 53.6 60.4 57 55.4 64 52.4 73.4 52.6 82.6 53.2 92 45.4 98.6 37 95 32.4 91.2 31.8 85.4 34 80Z" fill="currentColor"/>
+    <path d="M34 80C38 68 46 58 55 52.6 58.6 51 61.4 53.6 60.4 57 55.4 64 52.4 73.4 52.6 82.6 53.2 92 45.4 98.6 37 95 32.4 91.2 31.8 85.4 34 80Z" fill="#000" opacity=".1"/>
+    <path d="M54.2 52.8C56.4 48.4 59.8 47 62.6 48.6 63.2 52.2 61.8 55.6 59 57.2Z" fill="#1d1a24"/>
+    <use href="#gk-head-honk" transform="translate(70 15) rotate(-18)"/>
+  </symbol>
+  <symbol id="goose-carry" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs"/>
+    <path d="M62.4 84C63.2 60 66 39.6 70 24.4L81.6 24.8C79.2 40 77.6 60 77.6 84Z" fill="#1d1a24"/>
+    <use href="#gk-body"/>
+    <path d="M30 84C40 75 57 74 68 80.6 76 84 84.4 85.6 92.4 85 96 85.4 97 89.4 93.6 91.6 84.6 95.4 74.4 97.6 60 99 44 100.4 32 94.6 30 84Z" fill="currentColor"/>
+    <path d="M30 84C40 75 57 74 68 80.6 76 84 84.4 85.6 92.4 85 96 85.4 97 89.4 93.6 91.6 84.6 95.4 74.4 97.6 60 99 44 100.4 32 94.6 30 84Z" fill="#000" opacity=".1"/>
+    <use href="#gk-head" transform="translate(76 18) rotate(6)"/>
+  </symbol>
+  <!-- props: kit symbols (copied) + new props for this floor -->
+  <radialGradient id="k-bulb" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#fffaf0"/>
+    <stop offset=".45" stop-color="#ffe39a"/>
+    <stop offset="1" stop-color="#ffd468" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="k-ih" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#d7a4ff"/>
+    <stop offset="1" stop-color="#a54ce9"/>
+  </linearGradient>
+  <symbol id="ih-mark" viewBox="0 0 40 40">
+    <rect width="40" height="40" rx="10" fill="url(#k-ih)"/>
+    <circle cx="11.4" cy="11.6" r="2.7" fill="#fff"/>
+    <rect x="9.1" y="16.2" width="4.6" height="14.2" rx="1.2" fill="#fff"/>
+    <path d="M17 9.4H21.6V17.6C23 15.8 25 14.8 27.4 14.8 31.6 14.8 33.8 17.6 33.8 22V30.4H29.2V22.8C29.2 20.4 28.2 19.2 26.2 19.2 23.8 19.2 21.6 20.8 21.6 23.8V30.4H17Z" fill="#fff"/>
+  </symbol>
+  <symbol id="stool" viewBox="0 0 44 46">
+    <path d="M8 6 4 46H9L13 6ZM36 6 40 46H35L31 6Z" fill="#3d3a52"/>
+    <rect x="9" y="26" width="26" height="3.4" rx="1.6" fill="#33304a"/>
+    <rect x="0" y="0" width="44" height="7.4" rx="3.7" fill="#5c587a"/>
+    <rect x="2" y=".8" width="40" height="2" rx="1" fill="#77739a"/>
+  </symbol>
+  <!-- the kit table, shortened (170 wide instead of 240) -->
+  <symbol id="table-s" viewBox="0 0 170 80">
+    <rect x="12" y="10" width="10" height="70" rx="2" fill="#8d5f3d"/>
+    <rect x="148" y="10" width="10" height="70" rx="2" fill="#7a5034"/>
+    <rect x="16" y="10" width="138" height="9" fill="#7a5034"/>
+    <rect x="0" y="0" width="170" height="11" rx="3" fill="#c08758"/>
+    <rect x="2" y="1.2" width="166" height="2.4" rx="1.2" fill="#dcaa79"/>
+    <rect x="0" y="8.4" width="170" height="2.6" rx="1.3" fill="#9a6a44"/>
+  </symbol>
+  <symbol id="laptop-side" viewBox="0 0 46 31" overflow="visible">
+    <ellipse cx="10" cy="14" rx="20" ry="16" fill="url(#k-screenglow)"/>
+    <rect x="0" y="27.2" width="37" height="3.6" rx="1.4" fill="#c7ccd8"/>
+    <rect x="0" y="29.4" width="37" height="1.4" rx=".7" fill="#9aa1b0"/>
+    <path d="M33.4 27.6 37.4 27.6 44.6 1.2 40.6.4Z" fill="#c7ccd8"/>
+    <path d="M37.4 27.6 44.6 1.2 46 1.6 38.8 28Z" fill="#9aa1b0"/>
+    <path d="M33.6 26.6 40.6 1.4" stroke="#9be7ff" stroke-width="1.6" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="cup" viewBox="0 0 22 34">
+    <path d="M3.6 8 18.4 8 16.4 34 5.6 34Z" fill="#f2eef8"/>
+    <path d="M14.4 8 18.4 8 16.4 34 13.2 34Z" fill="#d7d0e4"/>
+    <path d="M4.6 15 17.6 15 17 23 5.2 23Z" fill="#8b5cf6"/>
+    <rect x="2" y="4" width="18" height="5" rx="2.2" fill="#3b3550"/>
+    <rect x="5" y="1.6" width="12" height="3.4" rx="1.6" fill="#4b4466"/>
+  </symbol>
+  <symbol id="plant-tall" viewBox="0 0 110 150" overflow="visible">
+    <ellipse cx="55" cy="149" rx="30" ry="3.6" fill="#000" opacity=".16"/>
+    <path d="M55 112C54 92 50 70 40 50M55 112C57 88 64 66 78 44M55 112C55 90 56 70 58 36M55 112C50 96 36 84 20 80M55 112C62 98 78 88 94 86" fill="none" stroke="#3b8a56" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M40 50C26 46 16 32 22 18 34 14 46 26 44 40Z" fill="#4fae6e"/>
+    <path d="M78 44C90 36 104 38 104 52 96 62 82 58 76 50Z" fill="#3f9a5e"/>
+    <path d="M58 36C52 22 58 6 70 6 78 16 72 32 62 38Z" fill="#59b877"/>
+    <path d="M20 80C6 80 -2 68 4 58 16 54 26 66 24 78Z" fill="#3f9a5e"/>
+    <path d="M94 86C106 82 114 92 110 102 98 104 90 96 92 88Z" fill="#4fae6e"/>
+    <path d="M32 24 40 38M64 12 63 30M96 46 82 52M10 64 22 76" stroke="#2f7a4a" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M30 112H80L74 150H36Z" fill="#c96f4a"/>
+    <path d="M64 112H80L74 150H62Z" fill="#a9573a"/>
+    <rect x="27" y="108" width="56" height="8" rx="3" fill="#d98560"/>
+  </symbol>
+  <!-- track icons (white on a coloured tile), 24 x 24 -->
+  <symbol id="ic-house" viewBox="0 0 24 24"><path d="M12 2.6 2.4 10.8H5.2V21H10V15H14V21H18.8V10.8H21.6Z" fill="#fff"/></symbol>
+  <symbol id="ic-tram" viewBox="0 0 24 24"><path d="M8.6 5.4 12 2.2 15.4 5.4" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="4.6" y="5.6" width="14.8" height="13.4" rx="4" fill="#fff"/><rect x="7" y="8" width="10" height="4.6" rx="1.4" fill="currentColor"/><circle cx="8.6" cy="15.6" r="1.3" fill="currentColor"/><circle cx="15.4" cy="15.6" r="1.3" fill="currentColor"/><path d="M7.4 19.4 6 22M16.6 19.4 18 22" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="ic-bolt" viewBox="0 0 24 24"><path d="M13.8 1.8 4.8 13.6H10.8L9.4 22.2 19.2 9.8H13.2Z" fill="#fff"/></symbol>
+  <symbol id="ic-crane" viewBox="0 0 24 24"><rect x="6.4" y="3.6" width="3.2" height="17" rx="1" fill="#fff"/><rect x="2.4" y="3.6" width="19" height="2.8" rx="1.2" fill="#fff"/><rect x="2.6" y="6.2" width="3.4" height="3.4" rx=".8" fill="#fff"/><path d="M18.4 6.4V12.2" stroke="#fff" stroke-width="1.3"/><path d="M16.4 12.4H20.4L19.8 14.6H17Z" fill="#fff"/><rect x="3.6" y="19.6" width="9" height="2.6" rx="1.2" fill="#fff"/></symbol>
+  <!-- event lanyard: ribbon top at y 0, badge hanging below -->
+  <symbol id="lanyard" viewBox="0 0 20 52" overflow="visible">
+    <path d="M3.4 0C1.6 13 5 25 10 31.6M16.6 0C18.4 13 15 25 10 31.6" fill="none" stroke="#c482f4" stroke-width="2.4" stroke-linecap="round"/>
+    <rect x="8.8" y="30" width="2.4" height="4" rx=".8" fill="#9aa1b0"/>
+    <rect x="2" y="33" width="16" height="19" rx="2.2" fill="#fbf6ea"/>
+    <rect x="2" y="33" width="16" height="5" rx="2" fill="#8b5cf6"/>
+    <circle cx="10" cy="43.6" r="2.8" fill="#c7ccd8"/>
+    <rect x="5" y="48" width="10" height="1.8" rx=".9" fill="#c7ccd8"/>
+  </symbol>
+  <!-- backpack overlay for goose-point (same x/y/width/height as the pose) -->
+  <symbol id="bp-point" viewBox="0 0 110 130" overflow="visible">
+    <path d="M40.4 63.6C49 66.4 54.4 75.4 52.6 93" fill="none" stroke="#3d3a52" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M23.4 55.4C23.4 48.6 36.4 48.6 36.4 55.4" fill="none" stroke="#3d3a52" stroke-width="2.6" stroke-linecap="round"/>
+    <rect x="15.6" y="54.4" width="29.4" height="33.6" rx="9" fill="#f59e5b"/>
+    <path d="M36 55.4C41.6 57 45 61.6 45 66.4V79C45 83.4 41.6 87 37 88Z" fill="#000" opacity=".14"/>
+    <rect x="19.4" y="69.4" width="19" height="14" rx="4.6" fill="#e07f3c"/>
+    <rect x="25.6" y="68" width="6.6" height="2.4" rx="1.2" fill="#ffd468"/>
+    <path d="M20.6 59.2C24.6 57.2 30.6 57 35 58.2" fill="none" stroke="#fff" stroke-opacity=".38" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</defs>
+<!-- floor: honey wood planks -->
+<rect x="0" y="440" width="1600" height="40" fill="#b47c4e"/>
+<rect x="548" y="453.5" width="280" height="13" fill="#fff" opacity=".05"/>
+<rect x="1180" y="466.5" width="282" height="13.5" fill="#fff" opacity=".05"/>
+<rect x="118" y="443" width="284" height="10.5" fill="#000" opacity=".04"/>
+<rect x="0" y="440" width="1600" height="3" fill="#cb9768"/>
+<path d="M0 453.5H1600M0 466.5H1600" stroke="#8f5c38" stroke-opacity=".35" stroke-width="1.2"/>
+<path d="M118 443V453.5M402 443V453.5M690 443V453.5M968 443V453.5M1250 443V453.5M1528 443V453.5M262 453.5V466.5M548 453.5V466.5M828 453.5V466.5M1110 453.5V466.5M1390 453.5V466.5M52 466.5V480M336 466.5V480M618 466.5V480M900 466.5V480M1180 466.5V480M1462 466.5V480" stroke="#8f5c38" stroke-opacity=".4" stroke-width="1.2"/>
+
+<!-- roll-up banner -->
+<ellipse cx="78" cy="440" rx="42" ry="4.5" fill="#000" opacity=".16"/>
+<rect x="76" y="132" width="3.6" height="300" fill="#9aa1b0"/>
+<rect x="46" y="128" width="64" height="302" rx="2" fill="#8b5cf6"/>
+<path d="M46 318C64 306 86 330 110 314V430H46Z" fill="#c482f4"/>
+<path d="M50 430V398H61V386H73V404H81V374H95V394H106V430Z" fill="#fff" opacity=".22"/>
+<rect x="97" y="128" width="13" height="302" fill="#000" opacity=".1"/>
+<rect x="43" y="124" width="70" height="7" rx="3.5" fill="#3d3a52"/>
+<rect x="53" y="143" width="50" height="50" rx="13" fill="#fbf6ea"/>
+<use href="#ih-mark" x="58" y="148" width="40" height="40"/>
+<rect x="56" y="208" width="44" height="5" rx="2.5" fill="#fff" opacity=".9"/>
+<rect x="56" y="218" width="30" height="4" rx="2" fill="#fff" opacity=".6"/>
+<circle cx="61" cy="244" r="4.4" fill="#ff6b81"/><circle cx="72.5" cy="244" r="4.4" fill="#46d4e8"/><circle cx="84" cy="244" r="4.4" fill="#ffc24d"/><circle cx="95.5" cy="244" r="4.4" fill="#ffd9a0"/>
+<rect x="40" y="428" width="76" height="12" rx="3" fill="#c7ccd8"/>
+<rect x="40" y="435.6" width="76" height="4.4" rx="2" fill="#9aa1b0"/>
+<rect x="42" y="429" width="72" height="2" rx="1" fill="#e7eaf0"/>
+
+<!-- registration: staff goose behind a cloth-covered table -->
+<g class="gz">
+<use href="#goose-carry" x="190" y="184" width="160" height="189" color="#5ec58f"/>
+</g>
+<ellipse cx="226" cy="440" rx="118" ry="5" fill="#000" opacity=".16"/>
+<path d="M120 330H332L337 438H115Z" fill="#3d3a52"/>
+<path d="M310 330H332L337 438H312Z" fill="#000" opacity=".2"/>
+<path d="M152 336 150 434M190 336 189 434M228 336 228 434M266 336 267 434M302 336 304 434" stroke="#2e2b40" stroke-width="1.6" stroke-linecap="round"/>
+<rect x="114" y="323" width="224" height="10" rx="4" fill="#4b4766"/>
+<rect x="116" y="324.2" width="220" height="2.6" rx="1.3" fill="#fff" opacity=".18"/>
+<path d="M140 327H196V408L168 420 140 408Z" fill="#fbf6ea"/>
+<path d="M185 327H196V408L185 412.6Z" fill="#000" opacity=".08"/>
+<use href="#ih-mark" x="150" y="346" width="36" height="36"/>
+<rect x="152" y="391" width="32" height="4" rx="2" fill="#8b5cf6" opacity=".55"/>
+<use href="#lanyard" x="232" y="327" width="20" height="52"/>
+<use href="#lanyard" x="256" y="327" width="20" height="52"/>
+<use href="#lanyard" x="280" y="327" width="20" height="52"/>
+<!-- sticker sheets -->
+<g transform="rotate(7 132 323)"><rect x="120" y="297" width="23" height="27" rx="2.4" fill="#e9e0ff"/></g>
+<g transform="rotate(-8 133 323)">
+  <rect x="121" y="296" width="24" height="28" rx="2.4" fill="#fbf6ea"/>
+  <circle cx="127.4" cy="303" r="3.2" fill="#ff6b81"/>
+  <rect x="133.6" y="299.6" width="7" height="7" rx="2" fill="#46d4e8"/>
+  <path d="M127.4 309.2 129.4 313.4 125 313.4Z" fill="#ffc24d"/>
+  <circle cx="137.2" cy="313" r="3.4" fill="#8b5cf6"/>
+  <rect x="124" y="318.6" width="14" height="2.4" rx="1.2" fill="#5ec58f"/>
+</g>
+<!-- folded purple t-shirts -->
+<rect x="152" y="315.6" width="50" height="8" rx="3" fill="#7c4fe0"/>
+<rect x="150" y="308" width="52" height="8" rx="3" fill="#8b5cf6"/>
+<rect x="153" y="300.4" width="49" height="8" rx="3" fill="#7c4fe0"/>
+<rect x="151" y="292.8" width="51" height="8" rx="3" fill="#8b5cf6"/>
+<path d="M155 309.6H197M156 302H197M154 294.4H197" stroke="#fff" stroke-opacity=".3" stroke-width="1.4" stroke-linecap="round"/>
+<rect x="192" y="292.8" width="10" height="30.8" rx="3" fill="#000" opacity=".12"/>
+<circle cx="174" cy="297" r="2" fill="#fff" opacity=".85"/>
+
+<!-- the just-arrived goose with a backpack -->
+<ellipse cx="413" cy="440" rx="48" ry="5" fill="#000" opacity=".16"/>
+<g class="gz">
+<g transform="matrix(-1 0 0 1 840 0)">
+  <use href="#goose-point" x="340" y="251" width="160" height="189" color="#a3b3ff"/>
+  <use href="#bp-point" x="340" y="251" width="160" height="189"/>
+</g>
+<path d="M326 310C326 328 338 338 347 323M332 311C333 325 341 331 348 321" fill="none" stroke="#c482f4" stroke-width="2.3" stroke-linecap="round"/>
+<g transform="rotate(-14 350 329)"><rect x="348.8" y="316" width="2.4" height="4" rx=".8" fill="#9aa1b0"/><rect x="342" y="319" width="16" height="19" rx="2.2" fill="#fbf6ea"/><rect x="342" y="319" width="16" height="5" rx="2" fill="#8b5cf6"/><circle cx="350" cy="329.6" r="2.8" fill="#c7ccd8"/><rect x="345" y="334" width="10" height="1.8" rx=".9" fill="#c7ccd8"/></g>
+</g>
+
+<!-- balloons tied to the podium -->
+<g class="kf-float">
+  <path d="M497 336C490 300 470 262 474 222M497 336C496 296 494 250 496 206M497 336C504 300 520 266 518 230" fill="none" stroke="#9aa1b0" stroke-width="1.2" stroke-linecap="round"/>
+  <ellipse cx="474" cy="204" rx="17" ry="20" fill="#ffd468"/>
+  <path d="M471 223 474 227 477 223Z" fill="#e2b23f"/>
+  <ellipse cx="496" cy="186" rx="17" ry="20" fill="#46d4e8"/>
+  <path d="M493 205 496 209 499 205Z" fill="#2fb5c8"/>
+  <ellipse cx="518" cy="212" rx="17" ry="20" fill="#ff6b81"/>
+  <path d="M515 231 518 235 521 231Z" fill="#e04f66"/>
+  <path d="M466 196C467 190 471 187 476 187M488 178C489 172 493 169 498 169M510 204C511 198 515 195 520 195" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2.4" stroke-linecap="round"/>
+</g>
+
+<!-- stage -->
+<ellipse cx="650" cy="440" rx="170" ry="5" fill="#000" opacity=".16"/>
+<rect x="490" y="408" width="320" height="32" fill="#3d3a52"/>
+<rect x="790" y="408" width="20" height="32" fill="#000" opacity=".18"/>
+<rect x="486" y="400" width="328" height="10" rx="3" fill="#c08758"/>
+<rect x="488" y="401.2" width="324" height="2.4" rx="1.2" fill="#dcaa79"/>
+<rect x="486" y="407.4" width="328" height="2.6" rx="1.3" fill="#9a6a44"/>
+<g fill="url(#k-bulb)"><ellipse cx="520" cy="424" rx="9" ry="6"/><ellipse cx="560" cy="424" rx="9" ry="6"/><ellipse cx="600" cy="424" rx="9" ry="6"/><ellipse cx="640" cy="424" rx="9" ry="6"/><ellipse cx="680" cy="424" rx="9" ry="6"/><ellipse cx="720" cy="424" rx="9" ry="6"/><ellipse cx="760" cy="424" rx="9" ry="6"/></g>
+<ellipse cx="628" cy="401" rx="86" ry="5" fill="#fff6dc" opacity=".55"/>
+
+<!-- podium -->
+<ellipse cx="532" cy="400" rx="36" ry="3.4" fill="#000" opacity=".16"/>
+<path d="M504 312H560L556 400H508Z" fill="#c08758"/>
+<path d="M543 312H560L556 400H541Z" fill="#9a6a44"/>
+<path d="M494 300H570L566 314H498Z" fill="#dcaa79"/>
+<rect x="494" y="297.6" width="76" height="5" rx="2.5" fill="#ecc496"/>
+<use href="#ih-mark" x="514" y="332" width="30" height="30"/>
+<rect x="502" y="394" width="60" height="7" rx="2" fill="#9a6a44"/>
+
+<!-- host goose, presenting -->
+<ellipse cx="632" cy="400" rx="44" ry="4" fill="#000" opacity=".16"/>
+<g class="gz" data-say="welcome!">
+<use href="#goose-point" x="548" y="211" width="160" height="189" color="#8b5cf6"/>
+</g>
+
+<!-- mic on a boom stand -->
+<ellipse cx="748" cy="400" rx="18" ry="2.4" fill="#000" opacity=".16"/>
+<path d="M748 300V398M748 397 733 400M748 397 763 400" fill="none" stroke="#3a3346" stroke-width="2.8" stroke-linecap="round"/>
+<path d="M748 303 718 259" stroke="#3a3346" stroke-width="2.4" stroke-linecap="round"/>
+<circle cx="748" cy="303" r="3.2" fill="#5c587a"/>
+<path d="M719 260 711 249" stroke="#3d3a52" stroke-width="5.4" stroke-linecap="round"/>
+<circle cx="709" cy="246" r="5.4" fill="#9aa1b0"/>
+<path d="M706 243.4 712 248.6M705.4 247.4 709.4 251" stroke="#6b6680" stroke-width="1" stroke-linecap="round"/>
+
+<!-- countdown screen on a rolling stand -->
+<ellipse cx="890" cy="440" rx="54" ry="4.5" fill="#000" opacity=".16"/>
+<rect x="884" y="246" width="12" height="184" rx="3" fill="#9aa1b0"/>
+<rect x="885.6" y="246" width="3" height="184" fill="#e7eaf0" opacity=".7"/>
+<rect x="842" y="427" width="96" height="7" rx="3.5" fill="#3d3a52"/>
+<circle cx="850" cy="436" r="4" fill="#2e2b40"/><circle cx="930" cy="436" r="4" fill="#2e2b40"/>
+<g transform="translate(0 -6)">
+<rect x="764" y="110" width="252" height="146" rx="8" fill="#3d3a52"/>
+<rect x="766" y="111.4" width="248" height="2.6" rx="1.3" fill="#fff" opacity=".18"/>
+<rect x="772" y="118" width="236" height="130" rx="4" fill="#2b2a4a"/>
+<use href="#ih-mark" x="784" y="127" width="18" height="18"/>
+<rect x="810" y="130" width="72" height="5" rx="2.5" fill="#fff" opacity=".85"/>
+<rect x="810" y="139" width="46" height="4" rx="2" fill="#fff" opacity=".45"/>
+<!-- the 24-hour clock, about to start -->
+<g fill="#ffd468" opacity=".1"><rect x="835" y="185.5" width="6" height="21" rx="2.4"/><rect x="811" y="161.5" width="6" height="21" rx="2.4"/><rect x="852.5" y="158" width="23" height="6" rx="2.4"/><rect x="852.5" y="204" width="23" height="6" rx="2.4"/><rect x="849" y="185.5" width="6" height="21" rx="2.4"/><rect x="908.5" y="181" width="23" height="6" rx="2.4"/><rect x="946.5" y="181" width="23" height="6" rx="2.4"/></g>
+<g fill="#ffd468"><rect x="814.5" y="158" width="23" height="6" rx="2.4"/><rect x="835" y="161.5" width="6" height="21" rx="2.4"/><rect x="814.5" y="204" width="23" height="6" rx="2.4"/><rect x="811" y="185.5" width="6" height="21" rx="2.4"/><rect x="814.5" y="181" width="23" height="6" rx="2.4"/><rect x="873" y="161.5" width="6" height="21" rx="2.4"/><rect x="873" y="185.5" width="6" height="21" rx="2.4"/><rect x="849" y="161.5" width="6" height="21" rx="2.4"/><rect x="852.5" y="181" width="23" height="6" rx="2.4"/><rect x="908.5" y="158" width="23" height="6" rx="2.4"/><rect x="929" y="161.5" width="6" height="21" rx="2.4"/><rect x="929" y="185.5" width="6" height="21" rx="2.4"/><rect x="908.5" y="204" width="23" height="6" rx="2.4"/><rect x="905" y="185.5" width="6" height="21" rx="2.4"/><rect x="905" y="161.5" width="6" height="21" rx="2.4"/><rect x="946.5" y="158" width="23" height="6" rx="2.4"/><rect x="967" y="161.5" width="6" height="21" rx="2.4"/><rect x="967" y="185.5" width="6" height="21" rx="2.4"/><rect x="946.5" y="204" width="23" height="6" rx="2.4"/><rect x="943" y="185.5" width="6" height="21" rx="2.4"/><rect x="943" y="161.5" width="6" height="21" rx="2.4"/><rect x="889" y="172" width="6" height="6" rx="1.6"/><rect x="889" y="190" width="6" height="6" rx="1.6"/></g>
+<ellipse cx="892" cy="184" rx="96" ry="30" fill="#ffd468" opacity=".06"/>
+<rect x="784" y="226" width="216" height="6" rx="3" fill="#fff" opacity=".16"/>
+<rect class="kf-load" x="784" y="226" width="92" height="6" rx="3" fill="#ffd468"/>
+<rect x="772" y="118" width="236" height="20" rx="4" fill="#fff" opacity=".04"/>
+</g>
+
+<!-- audience, cheering -->
+<ellipse cx="865" cy="440" rx="48" ry="5" fill="#000" opacity=".16"/>
+<g class="gz">
+<g transform="matrix(-1 0 0 1 1744 0)"><use href="#goose-honk" x="792" y="251" width="160" height="189" color="#ffd468"/></g>
+</g>
+<g class="gz-walk" data-from="r">
+<ellipse cx="978" cy="440" rx="38" ry="4" fill="#000" opacity=".12"/>
+<g class="gz">
+<g class="kf-hop"><g transform="matrix(-1 0 0 1 1970 0)"><use href="#goose-honk" x="905" y="241" width="160" height="189" color="#ff6b81"/></g></g>
+</g>
+</g>
+
+<!-- floor speaker -->
+<ellipse cx="1105" cy="440" rx="46" ry="5" fill="#000" opacity=".16"/>
+<rect x="1066" y="288" width="78" height="152" rx="6" fill="#3d3a52"/>
+<path d="M1128 288H1138C1141.3 288 1144 290.7 1144 294V434C1144 437.3 1141.3 440 1138 440H1128Z" fill="#000" opacity=".2"/>
+<rect x="1069" y="290" width="70" height="3" rx="1.5" fill="#fff" opacity=".16"/>
+<circle cx="1102" cy="310" r="7" fill="#2a2740"/><circle cx="1102" cy="310" r="3.4" fill="#5c587a"/>
+<circle cx="1102" cy="348" r="17" fill="#2a2740"/><circle cx="1102" cy="348" r="12" fill="#4b4766"/><circle cx="1102" cy="348" r="4.6" fill="#2a2740"/>
+<circle cx="1102" cy="400" r="27" fill="#2a2740"/>
+<g class="kf-thump"><circle cx="1102" cy="400" r="20" fill="#4b4766"/><circle cx="1102" cy="400" r="7" fill="#2a2740"/></g>
+<path d="M1088 386C1092 382 1098 380.6 1104 381" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+
+<!-- tall plant (behind the desk) -->
+<g class="kf-sway"><use href="#plant-tall" x="1480" y="222" width="160" height="218"/></g>
+
+<!-- desk: geese settling in -->
+<use href="#stool" x="1192.5" y="373" width="64" height="67"/>
+<g class="gz">
+<use href="#goose-type" x="1146" y="184" width="160" height="189" color="#f59e5b"/>
+</g>
+<g transform="matrix(-1 0 0 1 2896 0)">
+  <use href="#stool" x="1414.5" y="373" width="64" height="67"/>
+  <g class="gz">
+  <use href="#goose-carry" x="1368" y="184" width="160" height="189" color="#46d4e8"/>
+  </g>
+</g>
+<ellipse cx="1350" cy="440" rx="24" ry="3.4" fill="#000" opacity=".16"/>
+<path d="M1342 405C1342 398 1356 398 1356 405" fill="none" stroke="#3d3a52" stroke-width="2.6" stroke-linecap="round"/>
+<rect x="1331" y="404" width="38" height="36" rx="10" fill="#8b5cf6"/>
+<path d="M1358 404.6C1364.4 406 1369 411 1369 417V430C1369 435.5 1364.5 440 1359 440Z" fill="#000" opacity=".16"/>
+<rect x="1336" y="420" width="24" height="14" rx="5" fill="#7c4fe0"/>
+<path d="M1336 409.4C1341 407.4 1348 407.2 1353 408.4" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/>
+<use href="#table-s" x="1221.6" y="323.6" width="246.5" height="116"/>
+<ellipse cx="1246" cy="440" rx="12" ry="3" fill="#000" opacity=".16"/><ellipse cx="1443" cy="440" rx="12" ry="3" fill="#000" opacity=".16"/>
+<ellipse cx="1225" cy="440" rx="30" ry="3.4" fill="#000" opacity=".12"/><ellipse cx="1449.5" cy="440" rx="30" ry="3.4" fill="#000" opacity=".12"/>
+<use href="#laptop-side" x="1300" y="278.5" width="67" height="45"/>
+<g transform="matrix(-1 0 0 1 2896 0)"><use href="#cup" x="1493" y="271" width="23" height="36"/></g>
+
+<!-- confetti -->
+<g fill="#ff6b81"><rect x="836" y="441" width="7" height="3" rx="1" transform="rotate(18 839 442)"/><rect x="1012" y="444" width="7" height="3" rx="1" transform="rotate(-24 1015 445)"/><rect x="1186" y="446" width="7" height="3" rx="1" transform="rotate(30 1189 447)"/><rect x="706" y="400" width="6" height="2.6" rx="1"/></g>
+<g fill="#46d4e8"><rect x="902" y="446" width="7" height="3" rx="1" transform="rotate(-30 905 447)"/><rect x="1316" y="443" width="7" height="3" rx="1" transform="rotate(12 1319 444)"/><rect x="452" y="447" width="7" height="3" rx="1" transform="rotate(40 455 448)"/></g>
+<g fill="#ffc24d"><rect x="950" y="442" width="7" height="3" rx="1" transform="rotate(50 953 443)"/><rect x="1056" y="447" width="7" height="3" rx="1" transform="rotate(-12 1059 448)"/><circle cx="790" cy="446" r="2"/><circle cx="1250" cy="447" r="2"/></g>
+<g fill="#8b5cf6"><rect x="874" y="448" width="7" height="3" rx="1" transform="rotate(-50 877 449)"/><rect x="1140" y="442" width="7" height="3" rx="1" transform="rotate(22 1143 443)"/><circle cx="1036" cy="443" r="2"/></g>
+<g class="kf-drift">
+<rect x="1030" y="128" width="8" height="3.4" rx="1" fill="#ff6b81" transform="rotate(30 1034 130)"/><rect x="1050" y="176" width="8" height="3.4" rx="1" fill="#46d4e8" transform="rotate(-20 1054 178)"/><circle cx="1036" cy="212" r="2.4" fill="#ffc24d"/>
+<rect x="744" y="118" width="8" height="3.4" rx="1" fill="#ffc24d" transform="rotate(-36 748 120)"/><rect x="752" y="164" width="8" height="3.4" rx="1" fill="#8b5cf6" transform="rotate(24 756 166)"/><circle cx="1062" cy="236" r="2.2" fill="#5ec58f"/></g>
+</svg>

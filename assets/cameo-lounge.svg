@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 2 150 188">
+<!-- InfraHacks HQ · Sponsor Lounge: the announcer on the billboard. Drawn with art/kit.svg parts at x1.45. -->
+<defs>
+<g id="gk-legs">
+    <rect x="41" y="106" width="4.6" height="21" rx="2" fill="#2b2630" />
+    <rect x="54" y="106" width="4.6" height="21" rx="2" fill="#24202a" />
+    <path d="M35.6 130C35.6 127 38.6 125.6 43.4 125.6 47.6 125.6 51 127 51 130Z" fill="#2b2630" />
+    <path d="M48.6 130C48.6 127 51.6 125.6 56.4 125.6 60.6 125.6 64 127 64 130Z" fill="#24202a" />
+  </g>
+  
+<g id="gk-body">
+    <path d="M24 75 3.5 69.5C5.4 77 5 82 3 88L21 95Z" fill="#1d1a24" />
+    <path d="M5.2 86.4 21 95 20.4 100.6Z" fill="#f2ede4" />
+    <path d="M20 74C30 64 50 61.5 63 65.5 75.5 69.5 84 79.5 84 91 84 103.5 73 112.5 56.5 113 40 113.5 26 107 18.6 97 13.2 89.4 13.8 80.6 20 74Z" fill="currentColor" />
+    <path d="M18.6 97C26 107 40 113.5 56.5 113 73 112.5 84 103.5 84 91 84 89 83.6 87 83 85.2 80 99 68 106.6 53 106.2 38.4 105.8 27 100.6 18.6 92.6 18 94.2 18 95.8 18.6 97Z" fill="#000" opacity=".2" />
+    <path d="M24 73.4C34.6 66.4 50.2 64.6 61.6 67.6" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="2.6" stroke-linecap="round" />
+    <rect x="54" y="92" width="22" height="11" rx="4.5" fill="#000" opacity=".16" />
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="currentColor" />
+    <path d="M49 70.5C48.6 60.4 56 54.6 64.6 57.4 70.4 59.4 71.6 66.4 69.4 72.6Z" fill="#000" opacity=".14" />
+    <path d="M52.6 66.2C53.6 61.4 58 59.4 62.4 60.6" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2" stroke-linecap="round" />
+    <path d="M76.4 74.6 76 84.4M79.6 73.8 80.4 82.6" stroke="#f6f2ea" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="76" cy="85.4" r="1.3" fill="#f6f2ea" />
+    <circle cx="80.5" cy="83.6" r="1.3" fill="#f6f2ea" />
+  </g>
+  
+<g id="gk-head-honk">
+    <ellipse cx="0" cy="0" rx="12" ry="9.2" fill="#1d1a24" />
+    <path d="M-7-7.5C-3-9.6 3-9.8 7.5-7.6" fill="none" stroke="#3b3647" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M10-3.2C16.6-5.4 22-5.4 25.4-4 22-1.6 16-.4 10.4.2Z" fill="#2b2631" />
+    <path d="M10.4 1.8C15.4 3.4 20.2 6.6 22.6 9.6 17.6 9.8 13 7.6 10 4.8Z" fill="#2b2631" />
+    <path d="M10.6.4C15 .8 19.4 3.4 22.6 8.6" fill="none" stroke="#5a2430" stroke-width="1.4" stroke-linecap="round" />
+    <path d="M-10.6 1.4C-10 -3.8-4.6-5.8-.4-3.2 2.4-1 2.6 4.4-.6 8.4-4.8 10.2-9.6 7.6-10.6 1.4Z" fill="#f6f2ea" />
+    <path d="M3.6-4.2C4.8-5.6 6.8-5.6 8-4.2" fill="none" stroke="#f6f2ea" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+  
+<symbol id="goose-honk" viewBox="0 0 110 130" overflow="visible">
+    <use href="#gk-legs" />
+    <path d="M62.4 84C61.8 60 61.6 40 63.6 22.4L75.4 22C75.8 40 77.2 60 77.6 84Z" fill="#1d1a24" />
+    <use href="#gk-body" />
+    <path d="M34 80C38 68 46 58 55 52.6 58.6 51 61.4 53.6 60.4 57 55.4 64 52.4 73.4 52.6 82.6 53.2 92 45.4 98.6 37 95 32.4 91.2 31.8 85.4 34 80Z" fill="currentColor" />
+    <path d="M34 80C38 68 46 58 55 52.6 58.6 51 61.4 53.6 60.4 57 55.4 64 52.4 73.4 52.6 82.6 53.2 92 45.4 98.6 37 95 32.4 91.2 31.8 85.4 34 80Z" fill="#000" opacity=".1" />
+    <path d="M54.2 52.8C56.4 48.4 59.8 47 62.6 48.6 63.2 52.2 61.8 55.6 59 57.2Z" fill="#1d1a24" />
+    <use href="#gk-head-honk" transform="translate(70 15) rotate(-18)" />
+  </symbol>
+  
+</defs>
+<ellipse cx="78" cy="188" rx="34" ry="3.4" fill="#000" opacity=".2"/><g class="gz" data-say="your name here!"><use href="#goose-honk" x="-6" y="0" width="160" height="189" color="#46d4e8"/></g>
+</svg>

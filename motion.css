@@ -1,0 +1,166 @@
+/* ------------------------------------------------------------------ *
+ *  Motion layer. Pairs with motion.js, which adds html.mo only when
+ *  JavaScript runs and reduced motion is off. Every rule that hides
+ *  something is under html.mo, so without it the page shows as before.
+ *  Reveals use opacity and the individual translate / rotate / scale
+ *  properties, so they never fight the transforms the layout already uses.
+ * ------------------------------------------------------------------ */
+:root{--mo-ease:cubic-bezier(.2,.8,.2,1);--mo-out:cubic-bezier(.16,1,.3,1);--mo-spring:cubic-bezier(.34,1.56,.64,1)}
+
+/* ================================================================ *
+ *  0. Scroll progress, along the bottom edge of the header
+ * ================================================================ */
+mo-progress{display:block;position:absolute;left:0;right:0;bottom:-1px;z-index:2;height:2px;transform:scaleX(0);transform-origin:0 50%;background:linear-gradient(90deg,#ffd468,#ff9f6e 45%,#c98cff);box-shadow:0 0 10px #ffd46866;pointer-events:none}
+html.blueprint mo-progress{background:#eaf3ff;box-shadow:none}
+
+/* ================================================================ *
+ *  1. Scroll reveals. motion.js tags blocks with data-mo="<effect>" and
+ *  adds .mo-in (plus a --mo-d delay) as each one scrolls into view.
+ * ================================================================ */
+html.mo #main [data-mo]:not([data-mo=words]):not([data-mo=ground]):not(.mo-in){opacity:0}
+html.mo #main [data-mo].mo-in{animation-duration:var(--mo-t,.9s);animation-timing-function:var(--mo-ease);animation-delay:var(--mo-d,0ms);animation-fill-mode:backwards}
+html.mo #main [data-mo=up].mo-in{animation-name:mo-up}
+html.mo #main [data-mo=fade].mo-in{animation-name:mo-fade;--mo-t:.7s}
+html.mo #main [data-mo=left].mo-in{animation-name:mo-left}
+html.mo #main [data-mo=right].mo-in{animation-name:mo-right}
+html.mo #main [data-mo=rise].mo-in{animation-name:mo-rise;--mo-t:1.1s;animation-timing-function:var(--mo-out)}
+html.mo #main [data-mo=blur].mo-in{animation-name:mo-blur;--mo-t:1s}
+html.mo #main [data-mo=pop].mo-in{animation-name:mo-pop;--mo-t:.6s;animation-timing-function:var(--mo-spring)}
+html.mo #main [data-mo=pin].mo-in{animation-name:mo-pin;--mo-t:1.05s;animation-timing-function:cubic-bezier(.25,.75,.3,1)}
+html.mo #main [data-mo=swing].mo-in{animation-name:mo-swing;--mo-t:1.8s;animation-timing-function:cubic-bezier(.25,.6,.35,1)}
+html.mo #main [data-mo=chalk].mo-in{animation-name:mo-chalk;--mo-t:1.15s;animation-timing-function:cubic-bezier(.55,.1,.45,1)}
+html.mo #main [data-mo=plaque].mo-in{animation-name:mo-plaque;--mo-t:1s}
+
+@keyframes mo-up{from{opacity:0;translate:0 34px}}
+@keyframes mo-fade{from{opacity:0}}
+@keyframes mo-left{from{opacity:0;translate:-52px 0}}
+@keyframes mo-right{from{opacity:0;translate:52px 0}}
+@keyframes mo-rise{from{opacity:0;translate:0 64px;scale:.96}}
+@keyframes mo-blur{from{opacity:0;filter:blur(12px);translate:0 14px}}
+@keyframes mo-pop{from{opacity:0;scale:.55}}
+/* A spec sheet is slapped onto the wall: it drops in tilted, overshoots and settles. */
+@keyframes mo-pin{0%{opacity:0;translate:0 -54px;rotate:-6deg;scale:1.05}55%{opacity:1;translate:0 6px;rotate:1.5deg;scale:1}78%{translate:0 -2px;rotate:-.5deg}100%{opacity:1;translate:0 0;rotate:0deg;scale:1}}
+/* A badge is hung on its pin and swings to rest. */
+@keyframes mo-swing{0%{opacity:0;translate:0 -40px;rotate:20deg}20%{opacity:1;translate:0 0;rotate:-12deg}40%{rotate:7deg}60%{rotate:-3.5deg}80%{rotate:1.5deg}100%{opacity:1;translate:0 0;rotate:0deg}}
+/* Chalk: a line is written onto the board from left to right. */
+@keyframes mo-chalk{from{opacity:.4;clip-path:inset(-15% 100% -15% 0)}to{opacity:1;clip-path:inset(-15% 0 -15% 0)}}
+/* Floor plaque: the number arrives first, then the label slides out of it. */
+@keyframes mo-plaque{0%{opacity:0;clip-path:inset(0 calc(100% - 40px) 0 0 round 999px)}28%{opacity:1;clip-path:inset(0 calc(100% - 40px) 0 0 round 999px)}100%{opacity:1;clip-path:inset(0 0 0 0 round 999px)}}
+
+/* ---------- Kickoff Hall: the keynote screen switches on like an old TV; the cue cards are dealt ---------- */
+html.mo #main [data-mo=power].mo-in{animation-name:mo-power;--mo-t:1s;animation-timing-function:cubic-bezier(.3,.1,.2,1)}
+@keyframes mo-power{0%{opacity:1;clip-path:inset(50% 50% 50% 50% round 22px);filter:brightness(2.6)}22%{opacity:1;clip-path:inset(49.4% 2% 49.4% 2% round 22px);filter:brightness(2.2)}60%{clip-path:inset(0 0 0 0 round 22px);filter:brightness(1.5)}100%{opacity:1;clip-path:inset(0 0 0 0 round 22px);filter:none}}
+html.mo #main [data-mo=deal].mo-in{animation-name:mo-deal;--mo-t:1s;animation-timing-function:cubic-bezier(.2,.9,.3,1.04)}
+@keyframes mo-deal{from{opacity:0;translate:0 80px;rotate:-14deg;scale:.92}}
+/* The screen's light reaches the wall once it is on; the bar along its bottom edge loads. */
+html.mo #about .ko-stage:not(.is-on):before{opacity:0}
+html.mo #about .ko-screen.mo-in .ko-load i{animation:mo-load 2.6s cubic-bezier(.35,.1,.25,1) calc(var(--mo-d,0ms) + 1100ms) backwards}
+@keyframes mo-load{from{transform:scaleX(0)}}
+
+/* ---------- Canteen: the receipt feeds out of the till in jerks; the chalk icons are drawn on ---------- */
+html.mo #main [data-mo=print].mo-in{animation-name:mo-fade;--mo-t:.2s}
+html.mo #main [data-mo=print].mo-in .rc-paper{animation:mo-feed 1.7s steps(17,end) calc(var(--mo-d,0ms) + 120ms) backwards}
+@keyframes mo-feed{from{transform:translateY(-100%)}}
+html.mo #prizes .perk:not(.mo-in) .perk-icon path{stroke-dashoffset:1}
+html.mo #prizes .perk.mo-in .perk-icon path{animation:mo-chalkline .8s cubic-bezier(.5,.1,.4,1) calc(var(--mo-d,0ms) + 180ms) backwards}
+html.mo #prizes .perk.mo-in .perk-icon path:nth-child(2){animation-delay:calc(var(--mo-d,0ms) + 560ms)}
+html.mo #prizes .perk.mo-in .perk-icon path:nth-child(3){animation-delay:calc(var(--mo-d,0ms) + 860ms)}
+html.mo #prizes .perk.mo-in .perk-icon path:nth-child(4){animation-delay:calc(var(--mo-d,0ms) + 1080ms)}
+@keyframes mo-chalkline{from{stroke-dashoffset:1}}
+
+/* ---------- Headings rise word by word, each out of its own slot ---------- */
+mo-w{display:inline-block;clip-path:inset(-.3em -.15em -.32em -.15em)}
+mo-wi{display:inline-block}
+html.mo #main [data-mo=words]:not(.mo-in) mo-wi{opacity:0;translate:0 110%}
+html.mo #main [data-mo=words].mo-in mo-wi{animation:mo-word 1s var(--mo-out) calc(var(--mo-d,0ms) + var(--wi,0) * 60ms) backwards}
+@keyframes mo-word{from{opacity:0;translate:0 110%;rotate:4deg}}
+
+
+/* ---------- Odometer digits (motion.js builds these only while they roll) ---------- */
+mo-dg{position:relative;display:inline-block;clip-path:inset(0 -.45em)}
+mo-sz{visibility:hidden}
+mo-reel{display:block;position:absolute;top:0;left:-.45em;right:-.45em;text-align:center;will-change:transform}
+mo-reel>mo-c{display:block;height:var(--h);line-height:var(--h)}
+
+/* ---------- Floor plaques: the number pops and dings ---------- */
+html.mo #main .floor-plaque.mo-in>b{animation:mo-pop .55s var(--mo-spring) calc(var(--mo-d,0ms) + 50ms) backwards,mo-ding 1.3s ease-out calc(var(--mo-d,0ms) + 500ms) backwards}
+@keyframes mo-ding{from{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent,#ffd468) 80%,transparent)}to{box-shadow:0 0 0 18px color-mix(in srgb,var(--accent,#ffd468) 0%,transparent)}}
+
+/* ---------- Floor illustrations slide up into the room ---------- */
+html.mo #main [data-mo=ground]:not(.mo-in) .floor-art{opacity:0}
+html.mo #main [data-mo=ground].mo-in .floor-art.is-loaded{animation:mo-ground 1.3s var(--mo-out) var(--mo-d,0ms) backwards}
+@keyframes mo-ground{from{opacity:0;translate:0 44px;scale:1.04}}
+
+/* ---------- Workshop: the tape goes on after the sheet lands; build titles get highlighted ---------- */
+html.mo #main .lookcol.mo-in::before{animation:mo-tape .5s var(--mo-spring) calc(var(--mo-d,0ms) + 620ms) backwards}
+@keyframes mo-tape{from{opacity:0;scale:1.8}}
+html.mo #builds .lookcol li b{background:linear-gradient(transparent 58%,#46d4e88a 58% 90%,transparent 90%) no-repeat 0 0/0% 100%;-webkit-box-decoration-break:clone;box-decoration-break:clone;transition:background-size .9s var(--mo-ease) calc(var(--mo-d,0ms) + 450ms)}
+html.mo #builds .lookcol li.mo-in b{background-size:100% 100%}
+html.mo #building .lookcols .lookcol{transition:translate .4s var(--mo-ease),box-shadow .4s var(--mo-ease)}
+html.mo #building .lookcols .lookcol:hover{translate:0 -6px;box-shadow:0 24px 44px rgba(28,36,40,.3)}
+
+/* ---------- Sponsor Lounge: the billboard's lamps flicker on ---------- */
+html.mo #main .billboard.mo-in .bb-lamps i::after{animation:mo-lamp 1.2s linear calc(var(--mo-d,0ms) + 450ms) backwards}
+html.mo #main .billboard.mo-in .bb-lamps i:nth-child(2)::after{animation-delay:calc(var(--mo-d,0ms) + 620ms)}
+html.mo #main .billboard.mo-in .bb-lamps i:nth-child(3)::after{animation-delay:calc(var(--mo-d,0ms) + 780ms)}
+html.mo #main .billboard.mo-in .bb-face::after{animation:mo-lamplight 1.2s linear calc(var(--mo-d,0ms) + 500ms) backwards}
+@keyframes mo-lamp{0%{filter:brightness(.2)}9%{filter:brightness(1.7)}15%{filter:brightness(.35)}27%{filter:brightness(1.35)}34%{filter:brightness(.55)}52%,100%{filter:brightness(1)}}
+@keyframes mo-lamplight{0%{opacity:0}9%{opacity:var(--lit)}15%{opacity:0}27%{opacity:var(--lit)}34%{opacity:.1}52%,100%{opacity:var(--lit)}}
+
+/* ---------- Crew Room hovers ---------- */
+html.mo #team .open-roles li{transition:translate .3s var(--mo-ease),color .3s}
+html.mo #team .open-roles li:hover{translate:6px 0;color:#fff}
+
+/* ---------- Lobby: the work-order stamp flips when a drawer opens or shuts ---------- */
+html.mo #faq .faq details[open] summary::after{animation:mo-flip .5s var(--mo-spring)}
+html.mo #faq .faq details:not([open]) summary::after{animation:mo-flip-back .5s var(--mo-spring)}
+@keyframes mo-flip{from{opacity:0;transform:perspective(200px) rotateX(-90deg)}}
+@keyframes mo-flip-back{from{opacity:0;transform:perspective(200px) rotateX(90deg)}}
+
+/* ---------- Street level: a glint runs across "waiting." ---------- */
+html.mo:not(.blueprint) #building .floor--street>.final h2 .grad{display:inline-block;background:linear-gradient(100deg,#ffd468 0 40%,#fffbea 50%,#ffd468 60% 100%) 0 0/260% 100% no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;text-shadow:none;filter:drop-shadow(0 3px 14px rgba(32,12,56,.45));animation:mo-shine 5s ease-in-out 2s infinite}
+@keyframes mo-shine{0%,50%{background-position:100% 0}100%{background-position:0 0}}
+
+/* ================================================================ *
+ *  3. Floors: until you arrive, the room is dim; then the lights flicker on.
+ * ================================================================ */
+html.mo .floor[data-lights]:not(.mo-lit) .floor-shell{filter:brightness(.84)}
+html.mo .floor[data-lights]:not(.mo-lit) .floor-ceiling{filter:brightness(.5) saturate(.85)}
+html.mo .floor[data-lights]:not(.mo-lit) .floor-shell::after{opacity:0}
+html.mo .floor.mo-lit .floor-shell{animation:mo-room 1.1s linear backwards}
+html.mo .floor.mo-lit .floor-ceiling{animation:mo-ceiling 1.1s linear backwards}
+html.mo .floor.mo-lit .floor-shell::after{animation:mo-pool 1.1s linear backwards}
+@keyframes mo-room{0%{filter:brightness(.84)}8%{filter:brightness(1.03)}13%{filter:brightness(.86)}22%{filter:none}28%{filter:brightness(.92)}40%,100%{filter:none}}
+@keyframes mo-ceiling{0%{filter:brightness(.5) saturate(.85)}8%{filter:brightness(1.3)}13%{filter:brightness(.55)}22%{filter:brightness(1.15)}28%{filter:brightness(.7)}40%,100%{filter:none}}
+@keyframes mo-pool{0%{opacity:0}8%{opacity:1}13%{opacity:.1}22%{opacity:.9}28%{opacity:.3}40%,100%{opacity:1}}
+
+/* ================================================================ *
+ *  4. Play
+ * ================================================================ */
+/* Spotlight that follows the pointer across dark panels. */
+mo-glow{display:block;position:absolute;inset:0;z-index:4;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .45s;mix-blend-mode:screen;background:radial-gradient(var(--mo-glow-r,300px) circle at var(--mx,50%) var(--my,50%),var(--mo-glow-c,#ffffff1f),transparent 70%)}
+.mo-spot:hover>mo-glow{opacity:1}
+[data-glow=gold]{--mo-glow-c:#ffd4681f;--mo-glow-r:380px}
+[data-glow=paper]{--mo-glow-c:#ffffff29}
+[data-glow=chalk]{--mo-glow-c:#ffffff1c}
+[data-glow=badge]{--mo-glow-c:#ecd0ff33;--mo-glow-r:200px}
+[data-glow=violet]{--mo-glow-c:#c98cff26}
+html.blueprint mo-glow{display:none}
+
+/* Hero title letters take the pointer, so they can hop. */
+.hero h1 mo-ch{display:inline-block;pointer-events:auto}
+
+/* Nav marker. */
+mo-ink{display:block;position:absolute;left:0;top:0;height:2px;border-radius:2px;background:linear-gradient(90deg,#ffd468,#c98cff);box-shadow:0 0 8px #ffd46880;pointer-events:none;opacity:0;transition:translate .5s var(--mo-out),width .5s var(--mo-out),opacity .3s}
+mo-ink.is-on{opacity:1}
+html.blueprint mo-ink{background:#eaf3ff;box-shadow:none}
+@media (max-width:720px){mo-ink{display:none}}
+
+/* Confetti. */
+mo-bit{display:block;position:fixed;z-index:200;pointer-events:none}
+
+/* Printing shows everything. */
+@media print{
+  html.mo #main [data-mo],html.mo #main mo-wi,html.mo #main [data-mo]>*,html.mo #main .floor-art{opacity:1!important;translate:none!important;animation:none!important}
+  html.mo .floor[data-lights] .floor-shell,html.mo .floor[data-lights] .floor-ceiling{filter:none!important}
+}

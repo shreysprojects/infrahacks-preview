@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 90">
+<!-- InfraHacks HQ · concrete slab between two floors (cross-section).
+     Tiles horizontally: whatever leaves x=800 continues from x=0. Fully opaque. -->
+<style>
+  .flow{animation:s-flow 3s linear infinite}
+  .pulse{animation:s-pulse 6s ease-in-out infinite;opacity:0}
+  .p2{animation-delay:-2s}
+  .p3{animation-delay:-4s}
+  .led{animation:s-led 4s ease-in-out infinite}
+  @keyframes s-flow{to{stroke-dashoffset:-40}}
+  @keyframes s-pulse{0%{opacity:0;transform:translateX(0)}15%{opacity:1}85%{opacity:1}100%{opacity:0;transform:translateX(150px)}}
+  @keyframes s-led{0%,100%{opacity:1}50%{opacity:.35}}
+  @media (prefers-reduced-motion: reduce){*{animation:none !important}.pulse{opacity:0}}
+</style>
+<defs>
+  <!-- trapeze rack: two rods from the slab with struts under the tray, water pipe and sprinkler pipe -->
+  <g id="s-rack">
+    <path d="M-15 14V77M15 14V77" stroke="#8e8aa0" stroke-width="1.4"/>
+    <path d="M-15 15.6H-11.6M11.6 15.6H15" stroke="#a8a4b8" stroke-width="2.8" stroke-linecap="round"/>
+    <rect x="-20" y="53.4" width="40" height="2.8" rx="1" fill="#57536a"/>
+    <rect x="-20" y="65" width="40" height="2.8" rx="1" fill="#57536a"/>
+    <rect x="-20" y="74.6" width="40" height="2.8" rx="1" fill="#57536a"/>
+    <path d="M-20 53.9H20M-20 65.5H20M-20 75.1H20" stroke="#7d798d" stroke-width="1"/>
+    <path d="M-5.4 56.4C-5.4 62.6 5.4 62.6 5.4 56.4" fill="none" stroke="#b9b5c8" stroke-width="1.2"/>
+    <path d="M-4 67.6C-4 71.4 4 71.4 4 67.6" fill="none" stroke="#b9b5c8" stroke-width="1.1"/>
+  </g>
+  <!-- duct flange + hanger strap (centred on x=0) -->
+  <g id="s-flange">
+    <rect x="-1" y="14" width="2" height="4" fill="#8e8aa0"/>
+    <rect x="-3.4" y="16.2" width="6.8" height="23.6" rx="1.4" fill="#b9c0cc"/>
+    <rect x="1.6" y="16.2" width="1.8" height="23.6" fill="#8a91a0"/>
+    <circle cx="0" cy="21" r=".9" fill="#7f8696"/><circle cx="0" cy="28" r=".9" fill="#7f8696"/><circle cx="0" cy="35" r=".9" fill="#7f8696"/>
+  </g>
+  <g id="s-coupling">
+    <rect x="-5" y="55.8" width="10" height="10.4" rx="2" fill="#3a78c6"/>
+    <rect x="-5" y="55.8" width="10" height="2.2" rx="1.1" fill="#7fb6f2"/>
+    <rect x="2" y="55.8" width="3" height="10.4" rx="1.4" fill="#2a5fa3"/>
+  </g>
+  <g id="s-joint">
+    <rect x="-3.6" y="68.6" width="7.2" height="7" rx="1.6" fill="#c23a3a"/>
+    <rect x="-3.6" y="68.6" width="7.2" height="1.6" rx=".8" fill="#ff8a7a"/>
+  </g>
+  <rect id="s-tie" x="-1.2" y="42" width="2.4" height="9.4" rx="1" fill="#3a3346"/>
+  <g id="s-dot">
+    <ellipse cx="0" cy="44.2" rx="6.4" ry="2.8" fill="#9ff0ff" opacity=".4"/>
+    <rect x="-2.8" y="43.2" width="5.6" height="2" rx="1" fill="#eafcff"/>
+  </g>
+</defs>
+
+<!-- dark cavity -->
+<rect x="0" y="14" width="800" height="66" fill="#2a2638"/>
+<rect x="0" y="14" width="800" height="4" fill="#000" opacity=".25"/>
+
+<!-- large rectangular HVAC duct -->
+<rect x="0" y="17" width="800" height="22" fill="#a3aab8"/>
+<rect x="0" y="17" width="800" height="2.8" fill="#c9cfdb"/>
+<rect x="0" y="35.8" width="800" height="3.2" fill="#7f8696"/>
+<path d="M0 19.8 200 35.8M200 19.8 0 35.8M200 19.8 400 35.8M400 19.8 200 35.8M400 19.8 600 35.8M600 19.8 400 35.8M600 19.8 800 35.8M800 19.8 600 35.8" stroke="#000" stroke-opacity=".07" stroke-width="1.2"/>
+<use href="#s-flange" x="0"/><use href="#s-flange" x="200"/><use href="#s-flange" x="400"/><use href="#s-flange" x="600"/><use href="#s-flange" x="800"/>
+<rect x="0" y="39" width="800" height="2.2" fill="#000" opacity=".28"/>
+<!-- branch riser going up into the slab -->
+<rect x="306" y="10" width="30" height="8" fill="#a3aab8"/>
+<rect x="306" y="10" width="5" height="8" fill="#c9cfdb"/>
+<rect x="330" y="10" width="6" height="8" fill="#7f8696"/>
+<rect x="302" y="15.4" width="38" height="3.4" rx="1.4" fill="#b9c0cc"/>
+<!-- airflow labels -->
+<rect x="88" y="23" width="34" height="9.6" rx="2" fill="#ffd468"/>
+<path d="M93 27.8H112M107 24.6 112.6 27.8 107 31" fill="none" stroke="#3a3346" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="488" y="23" width="34" height="9.6" rx="2" fill="#ffd468"/>
+<path d="M493 27.8H512M507 24.6 512.6 27.8 507 31" fill="none" stroke="#3a3346" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- duct sensor with a status LED -->
+<rect x="735" y="22.6" width="18" height="10.6" rx="2" fill="#4a4660"/>
+<rect x="735" y="22.6" width="18" height="2" rx="1" fill="#6c6884"/>
+<path d="M739 27H743M739 30H742" stroke="#8e8aa0" stroke-width="1" stroke-linecap="round"/>
+<circle class="led" cx="747.6" cy="28.2" r="1.6" fill="#5ec58f"/>
+
+<!-- yellow cable tray with bundled cables -->
+<path d="M0 49.2Q50 49.2 100 47.4 200 51 300 47.4 400 51 500 47.4 600 51 700 47.4 750 49.2 800 49.2" fill="none" stroke="#ff6b81" stroke-width="2.4"/>
+<path d="M0 47.2Q50 47.2 100 45.4 200 49 300 45.4 400 49 500 45.4 600 49 700 45.4 750 47.2 800 47.2" fill="none" stroke="#a78bfa" stroke-width="2.6"/>
+<path d="M0 44.2H800" stroke="#46d4e8" stroke-width="2.6"/>
+<path d="M0 43.4H800" stroke="#fff" stroke-opacity=".35" stroke-width=".8"/>
+<use href="#s-tie" x="100"/><use href="#s-tie" x="300"/><use href="#s-tie" x="500"/><use href="#s-tie" x="700"/>
+<rect x="0" y="50" width="800" height="3.4" fill="#f2c24f"/>
+<rect x="0" y="50" width="800" height="1.1" fill="#ffe08a"/>
+<rect x="0" y="52.5" width="800" height=".9" fill="#c9962c"/>
+<path d="M0 50V53.4M20 50V53.4M40 50V53.4M60 50V53.4M80 50V53.4M100 50V53.4M120 50V53.4M140 50V53.4M160 50V53.4M180 50V53.4M200 50V53.4M220 50V53.4M240 50V53.4M260 50V53.4M280 50V53.4M300 50V53.4M320 50V53.4M340 50V53.4M360 50V53.4M380 50V53.4M400 50V53.4M420 50V53.4M440 50V53.4M460 50V53.4M480 50V53.4M500 50V53.4M520 50V53.4M540 50V53.4M560 50V53.4M580 50V53.4M600 50V53.4M620 50V53.4M640 50V53.4M660 50V53.4M680 50V53.4M700 50V53.4M720 50V53.4M740 50V53.4M760 50V53.4M780 50V53.4M800 50V53.4" stroke="#c9962c" stroke-width=".9"/>
+<use class="pulse" href="#s-dot" x="128"/>
+<use class="pulse p2" href="#s-dot" x="372"/>
+<use class="pulse p3" href="#s-dot" x="560"/>
+
+<!-- blue water pipe -->
+<rect x="0" y="57" width="800" height="8" fill="#4a8fe0"/>
+<rect x="0" y="57" width="800" height="1.8" fill="#7fb6f2"/>
+<rect x="0" y="63.2" width="800" height="1.8" fill="#2f6bb8"/>
+<path class="flow" d="M0 60.6H800" stroke="#bfe0ff" stroke-opacity=".5" stroke-width="1.4" stroke-dasharray="12 28" stroke-linecap="round"/>
+<g id="s-tag"><rect x="146" y="57.4" width="22" height="7.2" rx="1.6" fill="#f4f6fa"/><path d="M150 61H162M159.4 58.8 162.4 61 159.4 63.2" fill="none" stroke="#2f6bb8" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></g>
+<use href="#s-tag" x="400"/>
+<use href="#s-coupling" x="60"/><use href="#s-coupling" x="260"/><use href="#s-coupling" x="460"/><use href="#s-coupling" x="660"/>
+
+<!-- red sprinkler pipe -->
+<rect x="0" y="69.6" width="800" height="5" fill="#e24b4b"/>
+<rect x="0" y="69.6" width="800" height="1.3" fill="#ff7a6e"/>
+<rect x="0" y="73.5" width="800" height="1.1" fill="#b23434"/>
+<use href="#s-joint" x="40"/><use href="#s-joint" x="240"/><use href="#s-joint" x="440"/><use href="#s-joint" x="640"/>
+<rect x="138" y="74" width="4" height="7" fill="#c23a3a"/>
+<rect x="538" y="74" width="4" height="7" fill="#c23a3a"/>
+
+<!-- hangers -->
+<use href="#s-rack" x="200"/>
+<use href="#s-rack" x="600"/>
+
+<!-- valve with red handwheel + a small gauge -->
+<rect x="404" y="54.6" width="16" height="12.8" rx="2.4" fill="#5a6478"/>
+<rect x="404" y="54.6" width="16" height="2.2" rx="1.1" fill="#8a94a8"/>
+<circle cx="412" cy="61" r="7.6" fill="none" stroke="#e24b4b" stroke-width="2.6"/>
+<path d="M412 54V68M405 61H419" stroke="#e24b4b" stroke-width="1.8"/>
+<circle cx="412" cy="61" r="2.2" fill="#ff8a7a"/>
+<path d="M406.4 56C408 54.6 410 54 412 54" fill="none" stroke="#ff9a8a" stroke-width="1.2" stroke-linecap="round"/>
+<rect x="452.6" y="53.4" width="2.8" height="4" fill="#9aa1b0"/>
+<circle cx="454" cy="50" r="4.4" fill="#e7eaf0"/>
+<circle cx="454" cy="50" r="4.4" fill="none" stroke="#4a4660" stroke-width="1"/>
+<path d="M454 50 456.4 47.8" stroke="#e24b4b" stroke-width="1" stroke-linecap="round"/>
+
+<!-- top concrete (with rebar) -->
+<rect x="0" y="-4" width="800" height="18" fill="#6e6a7d"/>
+<rect x="0" y="-4" width="800" height="6.6" fill="#8f8ba0"/>
+<rect x="0" y="12.6" width="800" height="1.4" fill="#57536a"/>
+<rect x="306" y="10" width="30" height="4" fill="#a3aab8"/>
+<rect x="330" y="10" width="6" height="4" fill="#7f8696"/>
+<g fill="#7d798d">
+  <circle cx="34" cy="5.6" r="1.2"/><circle cx="91" cy="10.6" r=".9"/><circle cx="148" cy="5" r="1.4"/><circle cx="214" cy="10.4" r="1"/>
+  <circle cx="266" cy="5" r="1.1"/><circle cx="362" cy="5.4" r="1.4"/><circle cx="397" cy="10.8" r=".9"/><circle cx="452" cy="5.4" r="1.2"/>
+  <circle cx="515" cy="10.6" r="1"/><circle cx="574" cy="5" r="1.3"/><circle cx="642" cy="10.4" r="1"/><circle cx="701" cy="5.2" r="1.4"/><circle cx="763" cy="10.6" r="1"/>
+</g>
+<g fill="#4a4660">
+  <circle cx="25" cy="8.4" r="1.7"/><circle cx="75" cy="8.4" r="1.7"/><circle cx="125" cy="8.4" r="1.7"/><circle cx="175" cy="8.4" r="1.7"/>
+  <circle cx="225" cy="8.4" r="1.7"/><circle cx="275" cy="8.4" r="1.7"/><circle cx="375" cy="8.4" r="1.7"/><circle cx="425" cy="8.4" r="1.7"/>
+  <circle cx="475" cy="8.4" r="1.7"/><circle cx="525" cy="8.4" r="1.7"/><circle cx="575" cy="8.4" r="1.7"/><circle cx="625" cy="8.4" r="1.7"/>
+  <circle cx="675" cy="8.4" r="1.7"/><circle cx="725" cy="8.4" r="1.7"/><circle cx="775" cy="8.4" r="1.7"/>
+</g>
+
+<!-- bottom concrete -->
+<rect x="0" y="80" width="800" height="14" fill="#6e6a7d"/>
+<rect x="0" y="80" width="800" height="1.4" fill="#86829a"/>
+<rect x="0" y="88.4" width="800" height="5.6" fill="#57536a"/>
+<g fill="#7d798d">
+  <circle cx="48" cy="84.6" r="1"/><circle cx="212" cy="85.6" r="1.2"/><circle cx="288" cy="84" r=".9"/><circle cx="318" cy="85.4" r="1.1"/>
+  <circle cx="389" cy="84.4" r=".9"/><circle cx="477" cy="85.6" r="1.2"/><circle cx="606" cy="84.2" r="1"/><circle cx="684" cy="85.4" r="1.1"/><circle cx="752" cy="84.4" r=".9"/>
+</g>
+<rect x="136.6" y="80" width="6.8" height="2.4" rx="1" fill="#c9962c"/>
+<rect x="536.6" y="80" width="6.8" height="2.4" rx="1" fill="#c9962c"/>
+</svg>

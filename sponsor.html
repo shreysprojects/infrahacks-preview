@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sponsor InfraHacks 2027</title>
+<meta name="description" content="Sponsor InfraHacks 2027, a free, in-person, 24-hour hackathon for the built world. Name a challenge, seat a judge, and meet every team that builds on it.">
+<meta name="theme-color" content="#0C0620">
+<link rel="canonical" href="https://infrahacks.org/sponsor.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Sponsor InfraHacks 2027">
+<meta property="og:description" content="A free, in-person, 24-hour hackathon for the built world: housing, transit, energy, construction. Sponsor a challenge and meet every team that builds on it.">
+<meta property="og:image" content="https://infrahacks.org/og.png">
+<meta property="og:url" content="https://infrahacks.org/sponsor.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;900&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#F5F1FD;--mute:rgba(245,241,253,.72);--dim:rgba(245,241,253,.5);--edge:rgba(245,241,253,.16);--mag:#E06BF5;--violet:#A78BFA;--lineE:#FFC24D}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:radial-gradient(120% 80% at 50% -10%,#241046,#0c0620 70%);color:var(--ink);font-family:'Outfit',system-ui,sans-serif;font-weight:300;line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:40px 24px 90px}
+  a{color:var(--mag)}
+  .back{font-family:'JetBrains Mono';font-size:12px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--mute)}
+  .back:hover{color:var(--mag)}
+  .tag{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--violet);margin:34px 0 10px}
+  h1{font-family:'Unbounded';font-weight:900;font-size:clamp(32px,6vw,58px);line-height:1.05;letter-spacing:-.01em;max-width:16ch}
+  .sub{color:var(--mute);font-size:19px;margin:20px 0 0;max-width:60ch}
+  h2{font-family:'Unbounded';font-weight:700;font-size:clamp(22px,3.4vw,30px);margin:0 0 18px}
+  .why{display:grid;gap:16px;grid-template-columns:1fr 1fr;margin:64px 0}
+  @media(max-width:680px){.why{grid-template-columns:1fr}}
+  .why .w{border:1px solid var(--edge);border-radius:14px;padding:20px 22px;background:rgba(245,241,253,.03)}
+  .why .w b{color:var(--ink);font-weight:600}
+  .why .w span{color:var(--mute);font-size:15.5px}
+  .tiers{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));margin:24px 0 0}
+  .tier{border:1px solid var(--edge);border-radius:14px;padding:20px;background:rgba(245,241,253,.03)}
+  .tier.feat{border-color:var(--mag);box-shadow:0 0 0 1px var(--mag) inset}
+  .tier .n{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+  .tier .p{font-family:'Unbounded';font-weight:900;font-size:30px;margin:8px 0 6px}
+  .tier.t1 .p{color:var(--mag)}.tier.t2 .p{color:var(--violet)}.tier.t3 .p{color:var(--lineE)}.tier.t4 .p{color:#46D4E8}
+  .tier .d{color:var(--mute);font-size:14px}
+  /* form */
+  .formcard{border:1px solid var(--edge);border-radius:20px;padding:30px 28px;background:linear-gradient(180deg,rgba(28,16,56,.6),rgba(14,7,34,.6));margin-top:30px;max-width:560px}
+  .frm{display:grid;gap:15px}
+  .row2{display:grid;gap:15px;grid-template-columns:1fr 1fr}
+  @media(max-width:520px){.row2{grid-template-columns:1fr}}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-family:'JetBrains Mono';font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
+  .field .req{color:var(--mag)}
+  input,select,textarea{width:100%;font-family:'Outfit';font-size:15px;font-weight:300;color:var(--ink);background:rgba(245,241,253,.05);border:1px solid var(--edge);border-radius:11px;padding:12px 14px}
+  textarea{resize:vertical;min-height:90px;line-height:1.5}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--mag)}
+  select option{background:#1A0E36}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:600;font-size:16px;background:linear-gradient(95deg,#B07CFA,#E06BF5);color:#1A0A30;text-decoration:none;cursor:pointer;padding:14px 26px;border:0;border-radius:999px;width:100%}
+  .btn[disabled]{opacity:.6;cursor:progress}
+  .msg{font-family:'JetBrains Mono';font-size:13px;padding:12px 14px;border-radius:11px;display:none}
+  .msg.show{display:block}
+  .msg.err{background:rgba(255,90,110,.12);border:1px solid rgba(255,90,110,.4);color:#FF9AAA}
+  .done{text-align:center;padding:20px 6px;display:none}
+  .done.show{display:block}
+  .done .big{font-size:46px;margin-bottom:12px}
+  .done h3{font-family:'Unbounded';font-weight:900;font-size:24px;margin-bottom:8px}
+  .done p{color:var(--mute);font-size:15px}
+  hr{border:0;border-top:1px solid var(--edge);margin:64px 0}
+  footer{color:var(--mute);font-family:'JetBrains Mono';font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="./">← infrahacks.org</a>
+  <div class="tag">Sponsor · InfraHacks 2027</div>
+  <h1>Software ate every industry except the ones that build the world.</h1>
+  <p class="sub">InfraHacks 2027 is a free, in-person, application-based 24-hour hackathon for the built world: housing, transit, energy, construction. Jan 23–24 in Waterloo, 150–200 vetted student builders. Sponsor a challenge, seat a judge, and meet every team that builds on it.</p>
+
+  <p style="margin:18px 0 0;font-family:'JetBrains Mono';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)">Backed so far</p>
+  <p style="margin:6px 0 0;font-family:'JetBrains Mono';font-size:14px;color:var(--mute)"><b style="color:var(--ink);font-weight:600">MongoDB</b> · <b style="color:var(--ink);font-weight:600">ElevenLabs</b> · <b style="color:var(--ink);font-weight:600">Exa</b></p>
+
+  <div style="margin:2px 0 6px"><a class="btn" href="InfraHacks-Sponsorship-Package.pdf" target="_blank" rel="noopener">📄 Get the full sponsorship package (PDF)</a></div>
+
+  <div class="why">
+    <div class="w"><b>Recruiting pipeline, not a logo wall.</b> <span>Challenge sponsors name a challenge, co-write its brief, seat a judge, and meet every team that builds on it: the best hiring signal you'll get anywhere.</span></div>
+    <div class="w"><b>Reach built-world builders.</b> <span>Students who deliberately chose infrastructure over another social app: the talent built-world companies struggle to find anywhere else.</span></div>
+    <div class="w"><b>Proven, then scaled.</b> <span>Edition one drew 90+ vetted hackers and six sponsors with no entry fee. Edition two goes in person with 150–200 builders, vetted by application.</span></div>
+    <div class="w"><b>Face time that matters.</b> <span>Booths, mentoring, office hours, and demos: a full weekend on site with the field, plus resume access and direct intros to the teams on your challenge.</span></div>
+  </div>
+
+  <h2>Tiers</h2>
+  <div class="tiers">
+    <div class="tier t1 feat"><div class="n">Presenting · 1 slot</div><div class="p">$8,000</div><div class="d">"Presented by" naming everywhere, keynote at opening, named challenge, 2 judge seats, premium booth, early resume access.</div></div>
+    <div class="tier t2"><div class="n">Challenge · ×4</div><div class="p">$3,000</div><div class="d">Name a challenge, co-write its brief, seat a judge, booth at the venue, meet every team on your track.</div></div>
+    <div class="tier t3"><div class="n">Community</div><div class="p">$1,000</div><div class="d">Logo on site + venue signage, mentor/office-hours slot, social shout-outs, swag bag item.</div></div>
+    <div class="tier t4"><div class="n">Supporter</div><div class="p">$500</div><div class="d">Logo on the event site, closing ceremony thanks, social media story.</div></div>
+  </div>
+  <p style="color:var(--mute);font-size:14px;margin-top:14px">Also open: <b style="color:var(--lineE);font-weight:600">credits &amp; tools</b> for every team, and <b style="color:var(--lineE);font-weight:600">judge</b> seats. Custom packages welcome: if none of these fit, we'll build one that does. In-kind (credits, hardware, food, prizes) counts toward tier placement.</p>
+
+  <hr>
+
+  <h2 id="form">Like what you see? Let's talk.</h2>
+  <p style="color:var(--mute);margin-bottom:6px">Grabbed the package above? Tell us a bit about you and a real person will follow up within two business days with a couple of times to talk.</p>
+  <div class="formcard">
+    <form class="frm" id="sform" novalidate>
+      <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row2">
+        <div class="field"><label for="s-company">Company <span class="req">*</span></label><input id="s-company" name="company" type="text" maxlength="160"></div>
+        <div class="field"><label for="s-name">Your name <span class="req">*</span></label><input id="s-name" name="contact_name" type="text" maxlength="120"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="s-email">Work email <span class="req">*</span></label><input id="s-email" name="email" type="email" maxlength="200"></div>
+        <div class="field"><label for="s-tier">Tier you're eyeing</label>
+          <select id="s-tier" name="tier">
+            <option value="undecided">Not sure yet</option>
+            <option value="presenting">Presenting · $8,000</option>
+            <option value="track">Challenge · $3,000</option>
+            <option value="community">Community · $1,000</option>
+            <option value="supporter">Supporter · $500</option>
+            <option value="credits">Credits / judges</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label for="s-msg">Anything you want us to know?</label><textarea id="s-msg" name="message" maxlength="2000" placeholder="Goals, a challenge you love, timeline, questions…"></textarea></div>
+      <div class="msg err" id="s-err" role="alert"></div>
+      <button class="btn" type="submit" id="s-submit">Send message</button>
+    </form>
+    <div class="done" id="s-done">
+      <div class="big">✦</div>
+      <h3>Thanks, we're on it.</h3>
+      <p>Check your inbox for a confirmation. A real person will follow up within two business days to talk.</p>
+    </div>
+  </div>
+
+  <hr>
+  <footer>InfraHacks · <a href="mailto:sponsors@infrahacks.org">sponsors@infrahacks.org</a> · <a href="./">Home</a> · <a href="privacy.html">Privacy</a></footer>
+</div>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var form=$('#sform'), submit=$('#s-submit'), err=$('#s-err'), done=$('#s-done');
+  function setErr(m){ err.textContent=m||''; err.classList.toggle('show',!!m); }
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    setErr('');
+    var data={company:form.company.value.trim(),contact_name:form.contact_name.value.trim(),email:form.email.value.trim(),tier:form.tier.value,message:form.message.value.trim(),website:form.website.value};
+    if(!data.company||!data.contact_name){ setErr('Please add your company and name.'); return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)){ setErr('Please enter a valid work email.'); return; }
+    submit.disabled=true; submit.textContent='Sending…';
+    fetch('/api/sponsor-inquiry',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.json().then(function(j){return {status:r.status,body:j}})})
+      .then(function(res){
+        if(res.status===200&&res.body.ok){ form.style.display='none'; done.classList.add('show'); return; }
+        submit.disabled=false; submit.textContent='Send message';
+        if(res.status===429){ setErr('Too many requests, please try again in a few minutes.'); }
+        else { setErr(res.body.error||'Something went wrong. Please email sponsors@infrahacks.org.'); }
+      }).catch(function(){ submit.disabled=false; submit.textContent='Send message'; setErr('Network error, try again or email sponsors@infrahacks.org.'); });
+  });
+})();
+</script>
+</body>
+</html>
